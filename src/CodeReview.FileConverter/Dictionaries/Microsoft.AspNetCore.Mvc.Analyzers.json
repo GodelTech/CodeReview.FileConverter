@@ -1,0 +1,64 @@
+[
+  {
+    "id": "Microsoft.AspNetCore.Mvc.Analyzers",
+    "version": "2.2.0",
+    "description": "CSharp Analyzers for ASP.NET Core MVC.",
+    "diagnostics": [
+      {
+        "id": "MVC1000",
+        "title": "Use of IHtmlHelper.{0} should be avoided.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use of IHtmlHelper.{0} may result in application deadlocks. Consider using <partial> Tag Helper or IHtmlHelper.{0}Async.",
+        "customTags": []
+      },
+      {
+        "id": "MVC1001",
+        "title": "Filters cannot be applied to page handler methods.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "'{0}' cannot be applied to Razor Page handler methods. It may be applied either to the Razor Page model or applied globally.",
+        "customTags": []
+      },
+      {
+        "id": "MVC1002",
+        "title": "Route attributes cannot be applied to page handler methods.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "'{0}' cannot be applied to Razor Page handler methods. Routes for Razor Pages must be declared using the @page directive or using conventions.",
+        "customTags": []
+      },
+      {
+        "id": "MVC1003",
+        "title": "Route attributes cannot be applied to page models.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "'{0}' cannot be applied to a Razor Page model. Routes for Razor Pages must be declared using the @page directive or using conventions.",
+        "customTags": []
+      },
+      {
+        "id": "MVC1004",
+        "title": "Rename model bound parameter.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Naming",
+        "description": "",
+        "helpLinkUri": "https://aka.ms/AA20pbc",
+        "messageFormat": "Property on type '{0}' has the same name as parameter '{1}'. This may result in incorrect model binding. Consider renaming the parameter or using a model binding attribute to override the name.",
+        "customTags": []
+      }
+    ]
+  }
+]

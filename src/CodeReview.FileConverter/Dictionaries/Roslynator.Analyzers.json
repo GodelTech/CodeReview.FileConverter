@@ -1,0 +1,2838 @@
+[
+  {
+    "id": "Roslynator.Analyzers",
+    "version": "3.0.0",
+    "description": "A collection of 200+ analyzers for C#, powered by Roslyn.\n\n  - This package is dependent on Microsoft.CodeAnalysis.CSharp.Workspaces 3.5.0.",
+    "diagnostics": [
+      {
+        "id": "RCS1001",
+        "title": "Add braces (when expression spans over multiple lines).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1001",
+        "messageFormat": "Add braces to {0} (when expression spans over multiple lines).",
+        "customTags": []
+      },
+      {
+        "id": "RCS1002",
+        "title": "Remove braces.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1002",
+        "messageFormat": "Remove braces from {0}.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1002FadeOut",
+        "title": "Remove braces.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove braces from {0}.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1003",
+        "title": "Add braces to if-else (when expression spans over multiple lines).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1003",
+        "messageFormat": "Add braces to if-else (when expression spans over multiple lines).",
+        "customTags": []
+      },
+      {
+        "id": "RCS1004",
+        "title": "Remove braces from if-else.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1004",
+        "messageFormat": "Remove braces from if-else.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1004FadeOut",
+        "title": "Remove braces from if-else.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove braces from if-else.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1005",
+        "title": "Simplify nested using statement.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1005",
+        "messageFormat": "Simplify nested using statement.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1005FadeOut",
+        "title": "Simplify nested using statement.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Simplify nested using statement.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1006",
+        "title": "Merge 'else' with nested 'if'.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1006",
+        "messageFormat": "Merge 'else' with nested 'if'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1006FadeOut",
+        "title": "Merge 'else' with nested 'if'.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Merge 'else' with nested 'if'.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1007",
+        "title": "Add braces.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1007",
+        "messageFormat": "Add braces to {0}.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1008",
+        "title": "Use explicit type instead of 'var' (when the type is not obvious).",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1008",
+        "messageFormat": "Use explicit type instead of 'var'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1009",
+        "title": "Use explicit type instead of 'var' (foreach variable).",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1009",
+        "messageFormat": "Use explicit type instead of 'var'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1010",
+        "title": "Use 'var' instead of explicit type (when the type is obvious).",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1010",
+        "messageFormat": "Use 'var' instead of explicit type.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1012",
+        "title": "Use explicit type instead of 'var' (when the type is obvious).",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1012",
+        "messageFormat": "Use explicit type instead of 'var'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1013",
+        "title": "Use predefined type.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1013",
+        "messageFormat": "Use predefined type.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1014",
+        "title": "Avoid implicitly-typed array.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1014",
+        "messageFormat": "Declare explicit type when creating an array.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1015",
+        "title": "Use nameof operator.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1015",
+        "messageFormat": "Use nameof operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1015",
+        "title": "Use nameof operator.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1015",
+        "messageFormat": "Use nameof operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1015FadeOut",
+        "title": "Use nameof operator.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use nameof operator.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1016",
+        "title": "Use expression-bodied member.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1016",
+        "messageFormat": "Use expression bodied member.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1016FadeOut",
+        "title": "Use expression-bodied member.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use expression bodied member.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1017",
+        "title": "Avoid multiline expression body.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1017",
+        "messageFormat": "Expand expression body with multiline expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1018",
+        "title": "Add accessibility modifiers.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1018",
+        "messageFormat": "Add accessibility modifiers.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1019",
+        "title": "Order modifiers.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1019",
+        "messageFormat": "Order modifiers.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1020",
+        "title": "Simplify Nullable<T> to T?.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1020",
+        "messageFormat": "Simplify Nullable<T> to T?.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1021",
+        "title": "Simplify lambda expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1021",
+        "messageFormat": "Simplify lambda expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1021FadeOut",
+        "title": "Simplify lambda expression.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Simplify lambda expression.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1031",
+        "title": "Remove unnecessary braces.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1031",
+        "messageFormat": "Remove unnecessary braces.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1031FadeOut",
+        "title": "Remove unnecessary braces.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove unnecessary braces.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1032",
+        "title": "Remove redundant parentheses.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1032",
+        "messageFormat": "Remove redundant parentheses.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1032FadeOut",
+        "title": "Remove redundant parentheses.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove redundant parentheses.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1033",
+        "title": "Remove redundant boolean literal.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1033",
+        "messageFormat": "Remove redundant '{0}'.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1034",
+        "title": "Remove redundant 'sealed' modifier.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1034",
+        "messageFormat": "Remove redundant 'sealed' modifier.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1035",
+        "title": "Remove redundant comma in initializer.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1035",
+        "messageFormat": "Remove redundant comma in initializer.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1036",
+        "title": "Remove redundant empty line.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1036",
+        "messageFormat": "Remove redundant empty line.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1036",
+        "title": "Remove redundant empty line.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1036",
+        "messageFormat": "Remove redundant empty line.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1036a",
+        "title": "Remove empty line between closing brace and switch section.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1036a",
+        "messageFormat": "Remove empty line between closing brace and switch section.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1037",
+        "title": "Remove trailing white-space.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1037",
+        "messageFormat": "Remove trailing white-space.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1038",
+        "title": "Remove empty statement.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1038",
+        "messageFormat": "Remove empty statement.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1039",
+        "title": "Remove argument list from attribute.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1039",
+        "messageFormat": "Remove argument list from attribute.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1040",
+        "title": "Remove empty 'else' clause.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1040",
+        "messageFormat": "Remove empty 'else' clause.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1041",
+        "title": "Remove empty initializer.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1041",
+        "messageFormat": "Remove empty initializer.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1042",
+        "title": "Remove enum default underlying type.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1042",
+        "messageFormat": "Remove enum default underlying type.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1043",
+        "title": "Remove 'partial' modifier from type with a single part.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1043",
+        "messageFormat": "Remove 'partial' modifier from type with a single part.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1044",
+        "title": "Remove original exception from throw statement.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1044",
+        "messageFormat": "Remove original exception from throw statement.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1045",
+        "title": "Rename private field to camel case with underscore.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Naming",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1045",
+        "messageFormat": "Rename private field to camel case with underscore.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1045a",
+        "title": "Do not rename private static read-only field to camel case with underscore.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1045a",
+        "messageFormat": "Do not rename private static read-only field to camel case with underscore.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1046",
+        "title": "Asynchronous method name should end with 'Async'.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Naming",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1046",
+        "messageFormat": "Add suffix 'Async' to asynchronous method name.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1047",
+        "title": "Non-asynchronous method name should not end with 'Async'.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Naming",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1047",
+        "messageFormat": "Remove suffix 'Async' from non-asynchronous method name.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1047FadeOut",
+        "title": "Non-asynchronous method name should not end with 'Async'.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove suffix 'Async' from non-asynchronous method name.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1048",
+        "title": "Use lambda expression instead of anonymous method.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1048",
+        "messageFormat": "Use lambda expression instead of anonymous method.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1048FadeOut",
+        "title": "Use lambda expression instead of anonymous method.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use lambda expression instead of anonymous method.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1049",
+        "title": "Simplify boolean comparison.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1049",
+        "messageFormat": "Simplify boolean comparison.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1049FadeOut",
+        "title": "Simplify boolean comparison.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Simplify boolean comparison.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1050",
+        "title": "Add argument list to object creation expression (or vice versa).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1050",
+        "messageFormat": "Add argument list to object creation expression.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1050i",
+        "title": "Remove argument list from object creation expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1050i",
+        "messageFormat": "Remove argument list from object creation expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1051",
+        "title": "Parenthesize condition of conditional expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1051",
+        "messageFormat": "Parenthesize condition of conditional expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1051a",
+        "title": "Remove parentheses from condition of conditional expression (when condition is a single token).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1051a",
+        "messageFormat": "Remove parentheses from condition of conditional expression (when condition is a single token).",
+        "customTags": []
+      },
+      {
+        "id": "RCS1052",
+        "title": "Declare each attribute separately.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1052",
+        "messageFormat": "Declare each attribute separately.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1055",
+        "title": "Avoid semicolon at the end of declaration.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1055",
+        "messageFormat": "Remove semicolon from the end of declaration.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1056",
+        "title": "Avoid usage of using alias directive.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1056",
+        "messageFormat": "Avoid usage of using alias directive.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1058",
+        "title": "Use compound assignment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1058",
+        "messageFormat": "Use compound assignment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1058FadeOut",
+        "title": "Use compound assignment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use compound assignment.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1059",
+        "title": "Avoid locking on publicly accessible instance.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1059",
+        "messageFormat": "Lock on private field instead of locking on '{0}'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1060",
+        "title": "Declare each type in separate file.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1060",
+        "messageFormat": "Declare each type in separate file.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1061",
+        "title": "Merge 'if' with nested 'if'.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1061",
+        "messageFormat": "Merge 'if' with nested 'if'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1061FadeOut",
+        "title": "Merge 'if' with nested 'if'.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Merge 'if' with nested 'if'.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1063",
+        "title": "Avoid usage of do statement to create an infinite loop.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1063",
+        "messageFormat": "Use while statement to create an infinite loop.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1064",
+        "title": "Avoid usage of for statement to create an infinite loop.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1064",
+        "messageFormat": "Use while statement to create an infinite loop.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1065",
+        "title": "Avoid usage of while statement to create an inifinite loop.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1065",
+        "messageFormat": "Use for statement to create an infinite loop.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1066",
+        "title": "Remove empty 'finally' clause.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1066",
+        "messageFormat": "Remove empty 'finally' clause.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1066FadeOut",
+        "title": "Remove empty 'finally' clause.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove empty 'finally' clause.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1068",
+        "title": "Simplify logical negation.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1068",
+        "messageFormat": "Simplify logical negation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1068",
+        "title": "Simplify logical negation.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1068",
+        "messageFormat": "Simplify logical negation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1069",
+        "title": "Remove unnecessary case label.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1069",
+        "messageFormat": "Remove unnecessary case label.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1070",
+        "title": "Remove redundant default switch section.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1070",
+        "messageFormat": "Remove redundant default switch section.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1071",
+        "title": "Remove redundant base constructor call.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1071",
+        "messageFormat": "Remove redundant base constructor call.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1072",
+        "title": "Remove empty namespace declaration.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1072",
+        "messageFormat": "Remove empty namespace declaration.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1073",
+        "title": "Convert 'if' to 'return' statement.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1073",
+        "messageFormat": "Convert 'if' to 'return' statement.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1073FadeOut",
+        "title": "Convert 'if' to 'return' statement.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Convert 'if' to 'return' statement.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1074",
+        "title": "Remove redundant constructor.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1074",
+        "messageFormat": "Remove redundant constructor.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1075",
+        "title": "Avoid empty catch clause that catches System.Exception.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1075",
+        "messageFormat": "Avoid empty catch clause that catches System.Exception.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1077",
+        "title": "Optimize LINQ method call.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1077",
+        "messageFormat": "Optimize LINQ method call.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1078",
+        "title": "Use \"\" instead of string.Empty.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "General",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1078",
+        "messageFormat": "Use \"\" instead of string.Empty",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1079",
+        "title": "Throwing of new NotImplementedException.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "General",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1079",
+        "messageFormat": "Implement the functionality instead of throwing new NotImplementedException.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1080",
+        "title": "Use 'Count/Length' property instead of 'Any' method.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1080",
+        "messageFormat": "Use '{0}' property instead of 'Any' method.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1081",
+        "title": "Split variable declaration.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1081",
+        "messageFormat": "Split variable declaration.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1084",
+        "title": "Use coalesce expression instead of conditional expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1084",
+        "messageFormat": "Use coalesce expression instead of conditional expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1085",
+        "title": "Use auto-implemented property.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1085",
+        "messageFormat": "Use auto-implemented property.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1085FadeOut",
+        "title": "Use auto-implemented property.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use auto-implemented property.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1089",
+        "title": "Use --/++ operator instead of assignment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1089",
+        "messageFormat": "Use {0} operator instead of assignment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1089FadeOut",
+        "title": "Use --/++ operator instead of assignment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Use {0} operator instead of assignment.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1090",
+        "title": "Call 'ConfigureAwait(false)'.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1090",
+        "messageFormat": "Call 'ConfigureAwait(false).",
+        "customTags": []
+      },
+      {
+        "id": "RCS1091",
+        "title": "Remove empty region.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1091",
+        "messageFormat": "Remove empty region.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1091FadeOut",
+        "title": "Remove empty region.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove empty region.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1093",
+        "title": "Remove file with no code.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1093",
+        "messageFormat": "Remove file with no code.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1094",
+        "title": "Declare using directive on top level.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1094",
+        "messageFormat": "Declare using directive on top level.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1096",
+        "title": "Convert 'HasFlag' call to bitwise operation (or vice versa).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1096",
+        "messageFormat": "Convert 'HasFlag' call to bitwise operation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1096",
+        "title": "Convert 'HasFlag' call to bitwise operation (or vice versa).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1096",
+        "messageFormat": "Convert 'HasFlag' call to bitwise operation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1096i",
+        "title": "Convert bitwise operation to 'HasFlag' call.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1096i",
+        "messageFormat": "Convert bitwise operation to 'HasFlag' call.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1097",
+        "title": "Remove redundant 'ToString' call.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1097",
+        "messageFormat": "Remove redundant 'ToString' call.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1098",
+        "title": "Avoid 'null' on the left side of a binary expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1098",
+        "messageFormat": "'null' should be on the right side of a binary expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1099",
+        "title": "Default label should be the last label in a switch section.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1099",
+        "messageFormat": "Move default label to the last position in a switch section.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1100",
+        "title": "Format documentation summary on a single line.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Formatting",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1100",
+        "messageFormat": "Format documentation summary on a single line.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1101",
+        "title": "Format documentation summary on multiple lines.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Formatting",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1101",
+        "messageFormat": "Format documentation summary on multiple lines.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1102",
+        "title": "Make class static.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1102",
+        "messageFormat": "Make class static.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1103",
+        "title": "Convert 'if' to assignment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1103",
+        "messageFormat": "Convert 'if' to assignment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1104",
+        "title": "Simplify conditional expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1104",
+        "messageFormat": "Simplify conditional expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1104a",
+        "title": "Simplify conditional expression (when it includes negation of condition).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1104a",
+        "messageFormat": "Simplify conditional expression (when it includes negation of condition).",
+        "customTags": []
+      },
+      {
+        "id": "RCS1105",
+        "title": "Unncessary interpolation.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1105",
+        "messageFormat": "Unncessary interpolation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1106",
+        "title": "Remove empty destructor.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1106",
+        "messageFormat": "Remove empty destructor.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1107",
+        "title": "Remove redundant 'ToCharArray' call.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1107",
+        "messageFormat": "Remove redundant 'ToCharArray' call.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1108",
+        "title": "Add 'static' modifier to all partial class declarations.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1108",
+        "messageFormat": "Add 'static' modifier to all partial class declarations.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1110",
+        "title": "Declare type inside namespace.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1110",
+        "messageFormat": "Declare '{0}' inside namespace.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1111",
+        "title": "Add braces to switch section with multiple statements.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1111",
+        "messageFormat": "Add braces to switch section with multiple statements.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1112",
+        "title": "Combine 'Enumerable.Where' method chain.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1112",
+        "messageFormat": "Combine 'Enumerable.Where' method chain.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1112FadeOut",
+        "title": "Combine 'Enumerable.Where' method chain.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Combine 'Enumerable.Where' method chain.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1113",
+        "title": "Use 'string.IsNullOrEmpty' method.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1113",
+        "messageFormat": "Use 'string.IsNullOrEmpty' method.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1114",
+        "title": "Remove redundant delegate creation.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1114",
+        "messageFormat": "Remove redundant delegate creation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1114FadeOut",
+        "title": "Remove redundant delegate creation.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove redundant delegate creation.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1118",
+        "title": "Mark local variable as const.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "General",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1118",
+        "messageFormat": "Mark local variable as const.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1123",
+        "title": "Add parentheses when necessary.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1123",
+        "messageFormat": "Add parentheses when necessary.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1124",
+        "title": "Inline local variable.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1124",
+        "messageFormat": "Inline local variable.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1124FadeOut",
+        "title": "Inline local variable.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Inline local variable.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1126",
+        "title": "Add braces to if-else.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1126",
+        "messageFormat": "Add braces to {0}.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1128",
+        "title": "Use coalesce expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1128",
+        "messageFormat": "Use coalesce expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1128",
+        "title": "Use coalesce expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1128",
+        "messageFormat": "Use coalesce expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1129",
+        "title": "Remove redundant field initalization.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1129",
+        "messageFormat": "Remove redundant field initialization.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1130",
+        "title": "Bitwise operation on enum without Flags attribute.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "General",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1130",
+        "messageFormat": "Bitwise operation on enum without Flags attribute.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1132",
+        "title": "Remove redundant overriding member.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1132",
+        "messageFormat": "Remove redundant overriding {0}.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1133",
+        "title": "Remove redundant Dispose/Close call.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1133",
+        "messageFormat": "Remove redundant '{0}' call.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1134",
+        "title": "Remove redundant statement.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1134",
+        "messageFormat": "Remove redundant statement.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1135",
+        "title": "Declare enum member with zero value (when enum has FlagsAttribute).",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1135",
+        "messageFormat": "Declare enum member with zero value (when enum has FlagsAttribute).",
+        "customTags": []
+      },
+      {
+        "id": "RCS1136",
+        "title": "Merge switch sections with equivalent content.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1136",
+        "messageFormat": "Merge switch sections with equivalent content.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1138",
+        "title": "Add summary to documentation comment.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1138",
+        "messageFormat": "Add summary to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1139",
+        "title": "Add summary element to documentation comment.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1139",
+        "messageFormat": "Add summary element to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1140",
+        "title": "Add exception to documentation comment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1140",
+        "messageFormat": "Add exception to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1141",
+        "title": "Add 'param' element to documentation comment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1141",
+        "messageFormat": "Add 'param' element to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1142",
+        "title": "Add 'typeparam' element to documentation comment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1142",
+        "messageFormat": "Add 'typeparam' element to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1143",
+        "title": "Simplify coalesce expression.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1143",
+        "messageFormat": "Simplify coalesce expression.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1145",
+        "title": "Remove redundant 'as' operator.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1145",
+        "messageFormat": "Remove redundant 'as' operator.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1146",
+        "title": "Use conditional access.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1146",
+        "messageFormat": "Use conditional access.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1151",
+        "title": "Remove redundant cast.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1151",
+        "messageFormat": "Remove redundant cast.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1151",
+        "title": "Remove redundant cast.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1151",
+        "messageFormat": "Remove redundant cast.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1154",
+        "title": "Sort enum members.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1154",
+        "messageFormat": "Sort '{0}' members.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1155",
+        "title": "Use StringComparison when comparing strings.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1155",
+        "messageFormat": "Use StringComparison when comparing strings.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1156",
+        "title": "Use string.Length instead of comparison with empty string.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1156",
+        "messageFormat": "Use string.Length instead of comparison with empty string.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1157",
+        "title": "Composite enum value contains undefined flag.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1157",
+        "messageFormat": "Composite enum value contains undefined flag {0}.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1158",
+        "title": "Static member in generic type should use a type parameter.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1158",
+        "messageFormat": "Static member in generic type should use a type parameter.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1159",
+        "title": "Use EventHandler<T>.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1159",
+        "messageFormat": "Use EventHandler<T>.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1160",
+        "title": "Abstract type should not have public constructors.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1160",
+        "messageFormat": "Abstract type should not have public constructors.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1161",
+        "title": "Enum should declare explicit values.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1161",
+        "messageFormat": "Enum should declare explicit values.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1162",
+        "title": "Avoid chain of assignments.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1162",
+        "messageFormat": "Avoid chain of assignments.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1163",
+        "title": "Unused parameter.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1163",
+        "messageFormat": "Unused parameter '{0}'.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1164",
+        "title": "Unused type parameter.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1164",
+        "messageFormat": "Unused type parameter '{0}'.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1165",
+        "title": "Unconstrained type parameter checked for null.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1165",
+        "messageFormat": "Unconstrained type parameter checked for null.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1166",
+        "title": "Value type object is never equal to null.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1166",
+        "messageFormat": "Value type object is never equal to null.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1168",
+        "title": "Parameter name differs from base name.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1168",
+        "messageFormat": "Parameter name '{0}' differs from base name '{1}'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1169",
+        "title": "Make field read-only.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1169",
+        "messageFormat": "Make field read-only.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1170",
+        "title": "Use read-only auto-implemented property.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1170",
+        "messageFormat": "Use read-only auto-implemented property.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1171",
+        "title": "Simplify lazy initialization.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1171",
+        "messageFormat": "Simplify lazy initialization.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1172",
+        "title": "Use 'is' operator instead of 'as' operator.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1172",
+        "messageFormat": "Use 'is' operator instead of 'as' operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1173",
+        "title": "Use coalesce expression instead of 'if'.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1173",
+        "messageFormat": "Use coalesce expression instead of 'if'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1174",
+        "title": "Remove redundant async/await.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1174",
+        "messageFormat": "Remove redundant async/await.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1174FadeOut",
+        "title": "Remove redundant async/await.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove redundant async/await.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1175",
+        "title": "Unused this parameter.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1175",
+        "messageFormat": "Unused this parameter '{0}'.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1176",
+        "title": "Use 'var' instead of explicit type (when the type is not obvious).",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1176",
+        "messageFormat": "Use 'var' instead of explicit type.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1177",
+        "title": "Use 'var' instead of explicit type (in foreach).",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1177",
+        "messageFormat": "Use 'var' instead of explicit type.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1179",
+        "title": "Unnecessary assignment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1179",
+        "messageFormat": "Unnecessary assignment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1180",
+        "title": "Inline lazy initialization.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1180",
+        "messageFormat": "Inline lazy initialization.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1181",
+        "title": "Convert comment to documentation comment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "General",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1181",
+        "messageFormat": "Convert comment to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1182",
+        "title": "Remove redundant base interface.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1182",
+        "messageFormat": "Interface '{0}' is already implemented by '{1}'.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1186",
+        "title": "Use Regex instance instead of static method.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1186",
+        "messageFormat": "Use Regex instance instead of static method.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1187",
+        "title": "Use constant instead of field.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1187",
+        "messageFormat": "Use constant instead of field.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1188",
+        "title": "Remove redundant auto-property initialization.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1188",
+        "messageFormat": "Remove redundant auto-property initialization.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1189",
+        "title": "Add or remove region name.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1189",
+        "messageFormat": "{0} region name {1} #endregion.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1190",
+        "title": "Join string expressions.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1190",
+        "messageFormat": "Join string expressions.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1191",
+        "title": "Declare enum value as combination of names.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1191",
+        "messageFormat": "Declare enum value as combination of names.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1192",
+        "title": "Unnecessary usage of verbatim string literal.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1192",
+        "messageFormat": "Unnecessary usage of verbatim string literal.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1193",
+        "title": "Overriding member should not change 'params' modifier.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1193",
+        "messageFormat": "Overriding member should not change 'params' modifier.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1194",
+        "title": "Implement exception constructors.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1194",
+        "messageFormat": "Implement exception constructors.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1195",
+        "title": "Use ^ operator.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1195",
+        "messageFormat": "Use ^ operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1196",
+        "title": "Call extension method as instance method.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1196",
+        "messageFormat": "Call extension method as instance method.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1197",
+        "title": "Optimize StringBuilder.Append/AppendLine call.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1197",
+        "messageFormat": "Optimize StringBuilder.{0} call.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1198",
+        "title": "Avoid unnecessary boxing of value type.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1198",
+        "messageFormat": "Avoid unnecessary boxing of value type.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1198",
+        "title": "Avoid unnecessary boxing of value type.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1198",
+        "messageFormat": "Avoid unnecessary boxing of value type.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1199",
+        "title": "Simplify boolean expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1199",
+        "messageFormat": "Simplify boolean expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1200",
+        "title": "Call 'Enumerable.ThenBy' instead of 'Enumerable.OrderBy'.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1200",
+        "messageFormat": "Call 'Enumerable.ThenBy{0}' instead of 'Enumerable.OrderBy{0}'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1201",
+        "title": "Use method chaining.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1201",
+        "messageFormat": "Use method chaining.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1202",
+        "title": "Avoid NullReferenceException.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1202",
+        "messageFormat": "Avoid NullReferenceException.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1202",
+        "title": "Avoid NullReferenceException.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1202",
+        "messageFormat": "Avoid NullReferenceException.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1203",
+        "title": "Use AttributeUsageAttribute.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1203",
+        "messageFormat": "Use AttributeUsageAttribute.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1204",
+        "title": "Use EventArgs.Empty.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1204",
+        "messageFormat": "Use EventArgs.Empty.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1205",
+        "title": "Order named arguments according to the order of parameters.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1205",
+        "messageFormat": "Order named arguments according to the order of parameters.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1206",
+        "title": "Use conditional access instead of conditional expression.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1206",
+        "messageFormat": "Use conditional access instead of conditional expression.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1207",
+        "title": "Convert anonymous function to method group.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": false,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1207",
+        "messageFormat": "Convert anonymous function to method group.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1207FadeOut",
+        "title": "Convert anonymous function to method group.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Convert anonymous function to method group.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1208",
+        "title": "Reduce 'if' nesting.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1208",
+        "messageFormat": "Reduce 'if' nesting.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1209",
+        "title": "Order type parameter constraints.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1209",
+        "messageFormat": "Order type parameter constraints.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1210",
+        "title": "Return Task.FromResult instead of returning null.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1210",
+        "messageFormat": "Return Task.FromResult instead of returning null.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1211",
+        "title": "Remove unnecessary 'else'.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1211",
+        "messageFormat": "Remove unnecessary else clause.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1212",
+        "title": "Remove redundant assignment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1212",
+        "messageFormat": "Remove redundant assignment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1212FadeOut",
+        "title": "Remove redundant assignment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Remove redundant assignment.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1213",
+        "title": "Remove unused member declaration.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1213",
+        "messageFormat": "Remove unused {0} declaration.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1214",
+        "title": "Unnecessary interpolated string.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1214",
+        "messageFormat": "Unnecessary interpolated string.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1214FadeOut",
+        "title": "Unnecessary interpolated string.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Unnecessary interpolated string.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1215",
+        "title": "Expression is always equal to true/false.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1215",
+        "messageFormat": "Expression is always equal to '{0}'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1216",
+        "title": "Unnecessary unsafe context.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1216",
+        "messageFormat": "Unnecessary unsafe context.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1217",
+        "title": "Convert interpolated string to concatenation.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1217",
+        "messageFormat": "Convert interpolated string to concatenation.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1217FadeOut",
+        "title": "Convert interpolated string to concatenation.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Convert interpolated string to concatenation.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1218",
+        "title": "Simplify code branching.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1218",
+        "messageFormat": "Simplify code branching.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1219",
+        "title": "Call 'Enumerable.Skip' and 'Enumerable.Any' instead of 'Enumerable.Count'.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1219",
+        "messageFormat": "Call 'Enumerable.Skip' and 'Enumerable.Any' instead of 'Enumerable.Count'.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1220",
+        "title": "Use pattern matching instead of combination of 'is' operator and cast operator.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1220",
+        "messageFormat": "Use pattern matching instead of combination of 'is' operator and cast operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1221",
+        "title": "Use pattern matching instead of combination of 'as' operator and null check.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1221",
+        "messageFormat": "Use pattern matching instead of combination of 'as' operator and null check.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1222",
+        "title": "Merge preprocessor directives.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1222",
+        "messageFormat": "Merge preprocessor directives.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1223",
+        "title": "Mark publicly visible type with DebuggerDisplay attribute.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1223",
+        "messageFormat": "Mark '{0}' with DebuggerDisplay attribute.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1224",
+        "title": "Make method an extension method.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1224",
+        "messageFormat": "Make method an extension method.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1225",
+        "title": "Make class sealed.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1225",
+        "messageFormat": "Make class sealed.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1226",
+        "title": "Add paragraph to documentation comment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1226",
+        "messageFormat": "Add paragraph to documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1227",
+        "title": "Validate arguments correctly.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1227",
+        "messageFormat": "Validate arguments correctly.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1228",
+        "title": "Unused element in documentation comment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1228",
+        "messageFormat": "Unused element in documentation comment.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1228FadeOut",
+        "title": "Unused element in documentation comment.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "FadeOut",
+        "description": "",
+        "helpLinkUri": "",
+        "messageFormat": "Unused element in documentation comment.",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "RCS1229",
+        "title": "Use async/await when necessary.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1229",
+        "messageFormat": "Use async/await when necessary.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1230",
+        "title": "Unnecessary explicit use of enumerator.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1230",
+        "messageFormat": "Unnecessary explicit use of enumerator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1231",
+        "title": "Make parameter ref read-only.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1231",
+        "messageFormat": "Make parameter ref read-only.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1232",
+        "title": "Order elements in documentation comment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1232",
+        "messageFormat": "Order elements in documentation comment.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1233",
+        "title": "Use short-circuiting operator.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1233",
+        "messageFormat": "Use short-circuiting operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1234",
+        "title": "Duplicate enum value.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1234",
+        "messageFormat": "Duplicate enum value.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1235",
+        "title": "Optimize method call.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1235",
+        "messageFormat": "Optimize '{0}' call.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1236",
+        "title": "Use exception filter.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1236",
+        "messageFormat": "Use exception filter.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1237",
+        "title": "Use bit shift operator.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1237",
+        "messageFormat": "Use bit shift operator.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1238",
+        "title": "Avoid nested ?: operators.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1238",
+        "messageFormat": "Avoid nested ?: operators.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1239",
+        "title": "Use 'for' statement instead of 'while' statement.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Readability",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1239",
+        "messageFormat": "Use 'for' statement instead of 'while' statement.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1240",
+        "title": "Operator is unnecessary.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Redundancy",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1240",
+        "messageFormat": "The '{0}' operator is unnecessary.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1241",
+        "title": "Implement non-generic counterpart.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1241",
+        "messageFormat": "Implement {0} when implementing {0}<T>.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1242",
+        "title": "Do not pass non-read-only struct by read-only reference.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1242",
+        "messageFormat": "Do not pass non-read-only struct by read-only reference.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1243",
+        "title": "Duplicate word in a comment.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "General",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1243",
+        "messageFormat": "Duplicate word in a comment.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1244",
+        "title": "Simplify 'default' expression.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Simplification",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1244",
+        "messageFormat": "Simplify 'default' expression.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "RCS1246",
+        "title": "Use element access.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1246",
+        "messageFormat": "Use element access.",
+        "customTags": []
+      },
+      {
+        "id": "RCS1246a",
+        "title": "Do not use element access when expression is invocation.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": false,
+        "category": "AnalyzerOption",
+        "description": "",
+        "helpLinkUri": "http://pihrt.net/roslynator/analyzer?id=RCS1246a",
+        "messageFormat": "Do not use element access when expression is invocation.",
+        "customTags": []
+      }
+    ]
+  }
+]

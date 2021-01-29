@@ -1,0 +1,2175 @@
+[
+  {
+    "id": "StyleCop.Analyzers",
+    "version": "1.1.118",
+    "description": "An implementation of StyleCop's rules using Roslyn analyzers and code fixes",
+    "diagnostics": [
+      {
+        "id": "SA0001",
+        "title": "XML comment analysis disabled",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpecialRules",
+        "description": "XML comment analysis can only be performed when the project is configured to parse documentation comments. To enable this functionality, update the project to produce an XML documentation file as part of the build.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA0001.md",
+        "messageFormat": "XML comment analysis is disabled due to project configuration",
+        "customTags": []
+      },
+      {
+        "id": "SA0002",
+        "title": "Invalid settings file",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpecialRules",
+        "description": "Various errors in the stylecop.json file can prevent the file from being loaded by the analyzers. In this case, the default settings are used instead.\r\n\r\n{0}",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA0002.md",
+        "messageFormat": "The stylecop.json settings file could not be loaded",
+        "customTags": []
+      },
+      {
+        "id": "SA1000",
+        "title": "Keywords should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The spacing around a C# keyword is incorrect.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1000.md",
+        "messageFormat": "The keyword '{0}' should{1} be followed by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1001",
+        "title": "Commas should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The spacing around a comma is incorrect, within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1001.md",
+        "messageFormat": "Commas should{0} be {1} by whitespace.",
+        "customTags": []
+      },
+      {
+        "id": "SA1002",
+        "title": "Semicolons should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The spacing around a semicolon is incorrect, within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1002.md",
+        "messageFormat": "Semicolons should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1003",
+        "title": "Symbols should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The spacing around an operator symbol is incorrect, within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1003.md",
+        "messageFormat": "Operator '{0}' should be preceded by whitespace.",
+        "customTags": []
+      },
+      {
+        "id": "SA1004",
+        "title": "Documentation lines should begin with single space",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A line within a documentation header above a C# element does not begin with a single space.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1004.md",
+        "messageFormat": "Documentation line should begin with a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1005",
+        "title": "Single line comments should begin with single space",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A single-line comment within a C# code file does not begin with a single space.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1005.md",
+        "messageFormat": "Single line comment should begin with a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1006",
+        "title": "Preprocessor keywords should not be preceded by space",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A C# preprocessor-type keyword is preceded by space.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1006.md",
+        "messageFormat": "Preprocessor keyword '{0}' should not be preceded by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1007",
+        "title": "Operator keyword should be followed by space",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The operator keyword within a C# operator overload method is not followed by any whitespace.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1007.md",
+        "messageFormat": "Operator keyword should be followed by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1008",
+        "title": "Opening parenthesis should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An opening parenthesis within a C# statement is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1008.md",
+        "messageFormat": "Opening parenthesis should not be preceded by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1009",
+        "title": "Closing parenthesis should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A closing parenthesis within a C# statement is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1009.md",
+        "messageFormat": "Closing parenthesis should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1010",
+        "title": "Opening square brackets should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An opening square bracket within a C# statement is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1010.md",
+        "messageFormat": "Opening square brackets should {0} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1011",
+        "title": "Closing square brackets should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A closing square bracket within a C# statement is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1011.md",
+        "messageFormat": "Closing square bracket should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1012",
+        "title": "Opening braces should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An opening brace within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1012.md",
+        "messageFormat": "Opening brace should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1013",
+        "title": "Closing braces should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A closing brace within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1013.md",
+        "messageFormat": "Closing brace should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1014",
+        "title": "Opening generic brackets should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An opening generic bracket within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1014.md",
+        "messageFormat": "Opening generic brackets should not be {0} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1015",
+        "title": "Closing generic brackets should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A closing generic bracket within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1015.md",
+        "messageFormat": "Closing generic bracket should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1016",
+        "title": "Opening attribute brackets should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An opening attribute bracket within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1016.md",
+        "messageFormat": "Opening attribute brackets should not be followed by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1017",
+        "title": "Closing attribute brackets should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A closing attribute bracket within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1017.md",
+        "messageFormat": "Closing attribute brackets should not be preceded by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1018",
+        "title": "Nullable type symbols should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A nullable type symbol within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1018.md",
+        "messageFormat": "Nullable type symbol should not be preceded by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1019",
+        "title": "Member access symbols should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The spacing around a member access symbol is incorrect, within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1019.md",
+        "messageFormat": "Member access symbol '{0}' should not be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1020",
+        "title": "Increment decrement symbols should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An increment or decrement symbol within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1020.md",
+        "messageFormat": "{0} symbol '{1}' should not be {2} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1021",
+        "title": "Negative signs should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A negative sign within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1021.md",
+        "messageFormat": "Negative sign should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1022",
+        "title": "Positive signs should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A positive sign within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1022.md",
+        "messageFormat": "Positive sign should{0} be {1} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1023",
+        "title": "Dereference and access of symbols should be spaced correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A dereference symbol or an access-of symbol within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1023.md",
+        "messageFormat": "Dereference symbol '*' should {0}.",
+        "customTags": []
+      },
+      {
+        "id": "SA1024",
+        "title": "Colons Should Be Spaced Correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "A colon within a C# element is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1024.md",
+        "messageFormat": "Colon should{0} be {1}{2} by a space.",
+        "customTags": []
+      },
+      {
+        "id": "SA1025",
+        "title": "Code should not contain multiple whitespace in a row",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The code contains multiple whitespace characters in a row.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1025.md",
+        "messageFormat": "Code should not contain multiple whitespace characters in a row.",
+        "customTags": []
+      },
+      {
+        "id": "SA1026",
+        "title": "Code should not contain space after new or stackalloc keyword in implicitly typed array allocation",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "An implicitly typed array allocation within a C# code file is not spaced correctly.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1026.md",
+        "messageFormat": "The keyword '{0}' should not be followed by a space or a blank line.",
+        "customTags": []
+      },
+      {
+        "id": "SA1027",
+        "title": "Use tabs correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "The code contains a tab or space character which is not consistent with the current project settings.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1027.md",
+        "messageFormat": "Tabs and spaces should be used correctly",
+        "customTags": []
+      },
+      {
+        "id": "SA1028",
+        "title": "Code should not contain trailing whitespace",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.SpacingRules",
+        "description": "There should not be any whitespace at the end of a line of code.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1028.md",
+        "messageFormat": "Code should not contain trailing whitespace",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "SA1100",
+        "title": "Do not prefix calls with base unless local implementation exists",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A call to a member from an inherited class begins with 'base.', and the local class does not contain an override or implementation of the member.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1100.md",
+        "messageFormat": "Do not prefix calls with base unless local implementation exists",
+        "customTags": []
+      },
+      {
+        "id": "SA1101",
+        "title": "Prefix local calls with this",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A call to an instance member of the local class or a base class is not prefixed with 'this.', within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1101.md",
+        "messageFormat": "Prefix local calls with this",
+        "customTags": []
+      },
+      {
+        "id": "SA1102",
+        "title": "Query clause should follow previous clause",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A C# query clause does not begin on the same line as the previous clause, or on the next line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1102.md",
+        "messageFormat": "Query clause should follow previous clause.",
+        "customTags": []
+      },
+      {
+        "id": "SA1103",
+        "title": "Query clauses should be on separate lines or all on one line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The clauses within a C# query expression are not all placed on the same line, and each clause is not placed on its own line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1103.md",
+        "messageFormat": "Query clauses should be on separate lines or all on one line",
+        "customTags": []
+      },
+      {
+        "id": "SA1104",
+        "title": "Query clause should begin on new line when previous clause spans multiple lines",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A clause within a C# query expression begins on the same line as the previous clause, when the previous clause spans across multiple lines.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1104.md",
+        "messageFormat": "Query clause should begin on new line when previous clause spans multiple lines",
+        "customTags": []
+      },
+      {
+        "id": "SA1105",
+        "title": "Query clauses spanning multiple lines should begin on own line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A clause within a C# query expression spans across multiple lines, and does not begin on its own line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1105.md",
+        "messageFormat": "Query clauses spanning multiple lines should begin on own line",
+        "customTags": []
+      },
+      {
+        "id": "SA1106",
+        "title": "Code should not contain empty statements",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The C# code contains an extra semicolon.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1106.md",
+        "messageFormat": "Code should not contain empty statements",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "SA1107",
+        "title": "Code should not contain multiple statements on one line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The C# code contains more than one statement on a single line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1107.md",
+        "messageFormat": "Code should not contain multiple statements on one line",
+        "customTags": []
+      },
+      {
+        "id": "SA1108",
+        "title": "Block statements should not contain embedded comments",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A C# statement contains a comment between the declaration of the statement and the opening brace of the statement.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1108.md",
+        "messageFormat": "Block statements should not contain embedded comments",
+        "customTags": []
+      },
+      {
+        "id": "SA1109",
+        "title": "Block statements should not contain embedded regions",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A C# statement contains a region tag between the declaration of the statement and the opening brace of the statement.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1109.md",
+        "messageFormat": "",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1110",
+        "title": "Opening parenthesis or bracket should be on declaration line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The opening parenthesis or bracket is not placed on the same line as the method/indexer/attribute/array name.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1110.md",
+        "messageFormat": "Opening parenthesis or bracket should be on declaration line.",
+        "customTags": []
+      },
+      {
+        "id": "SA1111",
+        "title": "Closing parenthesis should be on line of last parameter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The closing parenthesis or bracket in a call to or declaration of a C# method/indexer/attribute/array/constructor/delegate is not placed on the same line as the last parameter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1111.md",
+        "messageFormat": "Closing parenthesis should be on line of last parameter",
+        "customTags": []
+      },
+      {
+        "id": "SA1112",
+        "title": "Closing parenthesis should be on line of opening parenthesis",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The closing parenthesis or bracket in a call to a C# method or indexer, or the declaration of a method or indexer, is not placed on the same line as the opening bracket when the element does not take any parameters.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1112.md",
+        "messageFormat": "Closing parenthesis should be on line of opening parenthesis",
+        "customTags": []
+      },
+      {
+        "id": "SA1113",
+        "title": "Comma should be on the same line as previous parameter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A comma between two parameters in a call to a C# method or indexer, or in the declaration of a method or indexer, is not placed on the same line as the previous parameter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1113.md",
+        "messageFormat": "Comma should be on the same line as previous parameter.",
+        "customTags": []
+      },
+      {
+        "id": "SA1114",
+        "title": "Parameter list should follow declaration",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The start of the parameter list for a method/constructor/indexer/array/operator call or declaration does not begin on the same line as the opening bracket, or on the line after the opening bracket.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1114.md",
+        "messageFormat": "Parameter list should follow declaration",
+        "customTags": []
+      },
+      {
+        "id": "SA1115",
+        "title": "Parameter should follow comma",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A parameter within a C# method or indexer call or declaration does not begin on the same line as the previous parameter, or on the next line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1115.md",
+        "messageFormat": "The parameter should begin on the line after the previous parameter.",
+        "customTags": []
+      },
+      {
+        "id": "SA1116",
+        "title": "Split parameters should start on line after declaration",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The parameters to a C# method or indexer call or declaration span across multiple lines, but the first parameter does not start on the line after the opening bracket.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1116.md",
+        "messageFormat": "The parameters should begin on the line after the declaration, whenever the parameter span across multiple lines",
+        "customTags": []
+      },
+      {
+        "id": "SA1117",
+        "title": "Parameters should be on same line or separate lines",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The parameters to a C# method or indexer call or declaration are not all on the same line or each on a separate line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1117.md",
+        "messageFormat": "The parameters should all be placed on the same line or each parameter should be placed on its own line.",
+        "customTags": []
+      },
+      {
+        "id": "SA1118",
+        "title": "Parameter should not span multiple lines",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A parameter to a C# method/indexer/attribute/array, other than the first parameter, spans across multiple lines. If the parameter is short, place the entire parameter on a single line. Otherwise, save the contents of the parameter in a temporary variable and pass the temporary variable as a parameter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1118.md",
+        "messageFormat": "The parameter spans multiple lines",
+        "customTags": []
+      },
+      {
+        "id": "SA1119",
+        "title": "Statement should not use unnecessary parenthesis",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# statement contains parenthesis which are unnecessary and should be removed.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1119.md",
+        "messageFormat": "Statement should not use unnecessary parenthesis",
+        "customTags": []
+      },
+      {
+        "id": "SA1119_p",
+        "title": "Statement should not use unnecessary parenthesis",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# statement contains parenthesis which are unnecessary and should be removed.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1119.md",
+        "messageFormat": "Statement should not use unnecessary parenthesis",
+        "customTags": [
+          "Unnecessary",
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1120",
+        "title": "Comments should contain text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The C# comment does not contain any comment text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1120.md",
+        "messageFormat": "Comments should contain text",
+        "customTags": []
+      },
+      {
+        "id": "SA1121",
+        "title": "Use built-in type alias",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The code uses one of the basic C# types, but does not use the built-in alias for the type.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1121.md",
+        "messageFormat": "Use built-in type alias",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "SA1122",
+        "title": "Use string.Empty for empty strings",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The C# code includes an empty string, written as \"\".",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1122.md",
+        "messageFormat": "Use string.Empty for empty strings",
+        "customTags": []
+      },
+      {
+        "id": "SA1123",
+        "title": "Do not place regions within elements",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The C# code contains a region within the body of a code element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1123.md",
+        "messageFormat": "Region should not be located within a code element.",
+        "customTags": []
+      },
+      {
+        "id": "SA1124",
+        "title": "Do not use regions",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The C# code contains a region.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1124.md",
+        "messageFormat": "Do not use regions",
+        "customTags": []
+      },
+      {
+        "id": "SA1125",
+        "title": "Use shorthand for nullable types",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "The Nullable<T> type has been defined not using the C# shorthand. For example, Nullable<DateTime> has been used instead of the preferred DateTime?",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1125.md",
+        "messageFormat": "Use shorthand for nullable types",
+        "customTags": []
+      },
+      {
+        "id": "SA1126",
+        "title": "Prefix calls correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A call to a member is not prefixed with the 'this.', 'base.', 'object.' or 'typename.' prefix to indicate the intended method call, within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1126.md",
+        "messageFormat": "",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1127",
+        "title": "Generic type constraints should be on their own line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Each type constraint clause for a generic type parameter should be listed on a line of code by itself.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1127.md",
+        "messageFormat": "Generic type constraints should be on their own line",
+        "customTags": []
+      },
+      {
+        "id": "SA1128",
+        "title": "Put constructor initializers on their own line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A constructor initializer, including the colon character, should be on its own line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1128.md",
+        "messageFormat": "Put constructor initializers on their own line",
+        "customTags": []
+      },
+      {
+        "id": "SA1129",
+        "title": "Do not use default value type constructor",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "When creating a new instance of a value type T, the syntax 'default(T)' is functionally equivalent to the syntax 'new T()'. To avoid confusion regarding the behavior of the resulting instance, the first form is preferred.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1129.md",
+        "messageFormat": "Do not use default value type constructor",
+        "customTags": []
+      },
+      {
+        "id": "SA1130",
+        "title": "Use lambda syntax",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Lambda expressions are more succinct and easier to read than anonymous methods, so they should are preferred whenever the two are functionally equivalent.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1130.md",
+        "messageFormat": "Use lambda syntax",
+        "customTags": []
+      },
+      {
+        "id": "SA1131",
+        "title": "Use readable conditions",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "When a comparison is made between a variable and a literal, the variable should be placed on the left-hand-side to maximize readability.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1131.md",
+        "messageFormat": "Constant values should appear on the right-hand side of comparisons",
+        "customTags": []
+      },
+      {
+        "id": "SA1132",
+        "title": "Do not combine fields",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Each field should be declared on its own line, in order to clearly see each field of a type and allow for proper documentation of the behavior of each field.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1132.md",
+        "messageFormat": "Each field should be declared on its own line",
+        "customTags": []
+      },
+      {
+        "id": "SA1133",
+        "title": "Do not combine attributes",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Each attribute usage should be placed in its own set of square brackets for maximum readability.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1133.md",
+        "messageFormat": "Each attribute should be placed in its own set of square brackets.",
+        "customTags": []
+      },
+      {
+        "id": "SA1134",
+        "title": "Attributes should not share line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Each attribute should be placed on its own line of code.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1134.md",
+        "messageFormat": "Each attribute should be placed on its own line of code.",
+        "customTags": []
+      },
+      {
+        "id": "SA1135",
+        "title": "Using directives should be qualified",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "All using directives should be qualified.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1135.md",
+        "messageFormat": "Using directive for namespace '{0}' should be qualified",
+        "customTags": []
+      },
+      {
+        "id": "SA1136",
+        "title": "Enum values should be on separate lines",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Enum values should be placed on their own lines for maximum readability.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1136.md",
+        "messageFormat": "Enum values should be on separate lines",
+        "customTags": []
+      },
+      {
+        "id": "SA1137",
+        "title": "Elements should have the same indentation",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Elements at the same level in the syntax tree should have the same indentation.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1137.md",
+        "messageFormat": "Elements should have the same indentation",
+        "customTags": []
+      },
+      {
+        "id": "SA1139",
+        "title": "Use literal suffix notation instead of casting",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "Use literal suffix notation instead of casting, in order to improve readability, avoid bugs related to illegal casts and ensure that optimal IL is produced.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1139.md",
+        "messageFormat": "Use literal suffix notation instead of casting",
+        "customTags": []
+      },
+      {
+        "id": "SA1200",
+        "title": "Using directives should be placed correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A C# using directive is placed outside of a namespace element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1200.md",
+        "messageFormat": "Using directive should appear within a namespace declaration",
+        "customTags": []
+      },
+      {
+        "id": "SA1201",
+        "title": "Elements should appear in the correct order",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "An element within a C# code file is out of order in relation to the other elements in the code.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1201.md",
+        "messageFormat": "A {0} should not follow a {1}",
+        "customTags": []
+      },
+      {
+        "id": "SA1202",
+        "title": "Elements should be ordered by access",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "An element within a C# code file is out of order in relation to other elements in the code.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1202.md",
+        "messageFormat": "'{0}' members should come before '{1}' members",
+        "customTags": []
+      },
+      {
+        "id": "SA1203",
+        "title": "Constants should appear before fields",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A constant field is placed beneath a non-constant field.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1203.md",
+        "messageFormat": "Constant fields should appear before non-constant fields",
+        "customTags": []
+      },
+      {
+        "id": "SA1204",
+        "title": "Static elements should appear before instance elements",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A static element is positioned beneath an instance element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1204.md",
+        "messageFormat": "Static members should appear before non-static members",
+        "customTags": []
+      },
+      {
+        "id": "SA1205",
+        "title": "Partial elements should declare access",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "The partial element does not have an access modifier defined.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1205.md",
+        "messageFormat": "Partial elements should declare an access modifier",
+        "customTags": []
+      },
+      {
+        "id": "SA1206",
+        "title": "Declaration keywords should follow order",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "The keywords within the declaration of an element do not follow a standard ordering scheme.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1206.md",
+        "messageFormat": "The '{0}' modifier should appear before '{1}'",
+        "customTags": []
+      },
+      {
+        "id": "SA1207",
+        "title": "Protected should come before internal",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "The keyword '{0}' is positioned after the keyword '{1}' within the declaration of a {0} {1} C# element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1207.md",
+        "messageFormat": "The keyword '{0}' should come before '{1}'.",
+        "customTags": []
+      },
+      {
+        "id": "SA1208",
+        "title": "System using directives should be placed before other using directives",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A using directive which declares a member of the 'System' namespace appears after a using directive which declares a member of a different namespace, within a C# code file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1208.md",
+        "messageFormat": "Using directive for '{0}' should appear before directive for '{1}'",
+        "customTags": []
+      },
+      {
+        "id": "SA1209",
+        "title": "Using alias directives should be placed after other using directives",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A using-alias directive is positioned before a regular using directive.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1209.md",
+        "messageFormat": "Using alias directives should be placed after all using namespace directives.",
+        "customTags": []
+      },
+      {
+        "id": "SA1210",
+        "title": "Using directives should be ordered alphabetically by namespace",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "The using directives within a C# code file are not sorted alphabetically by namespace.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1210.md",
+        "messageFormat": "Using directives should be ordered alphabetically by the namespaces.",
+        "customTags": []
+      },
+      {
+        "id": "SA1211",
+        "title": "Using alias directives should be ordered alphabetically by alias name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "The using-alias directives within a C# code file are not sorted alphabetically by alias name.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1211.md",
+        "messageFormat": "Using alias directive for '{0}' should appear before using alias directive for '{1}'",
+        "customTags": []
+      },
+      {
+        "id": "SA1212",
+        "title": "Property accessors should follow order",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A get accessor appears after a set accessor within a property or indexer.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1212.md",
+        "messageFormat": "A get accessor appears after a set accessor within a property or indexer.",
+        "customTags": []
+      },
+      {
+        "id": "SA1213",
+        "title": "Event accessors should follow order",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "An add accessor appears after a remove accessor within an event.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1213.md",
+        "messageFormat": "Event accessors should follow order.",
+        "customTags": []
+      },
+      {
+        "id": "SA1214",
+        "title": "Readonly fields should appear before non-readonly fields",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A readonly field is positioned beneath a non-readonly field.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1214.md",
+        "messageFormat": "Readonly fields should appear before non-readonly fields",
+        "customTags": []
+      },
+      {
+        "id": "SA1216",
+        "title": "Using static directives should be placed at the correct location.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "A using static directive is positioned before a regular or after an alias using directive.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1216.md",
+        "messageFormat": "Using static directives should be placed at the correct location.",
+        "customTags": []
+      },
+      {
+        "id": "SA1217",
+        "title": "Using static directives should be ordered alphabetically",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.OrderingRules",
+        "description": "All using static directives should be ordered alphabetically.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1217.md",
+        "messageFormat": "The using static directive for '{0}' should appear after the using static directive for '{1}'",
+        "customTags": []
+      },
+      {
+        "id": "SA1300",
+        "title": "Element should begin with upper-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a C# element does not begin with an upper-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1300.md",
+        "messageFormat": "Element '{0}' should begin with an uppercase letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1301",
+        "title": "Element should begin with lower-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "There are currently no situations in which this rule will fire.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1301.md",
+        "messageFormat": "Element should begin with lower-case letter",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1302",
+        "title": "Interface names should begin with I",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a C# interface does not begin with the capital letter I.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1302.md",
+        "messageFormat": "Interface names should begin with I",
+        "customTags": []
+      },
+      {
+        "id": "SA1303",
+        "title": "Const field names should begin with upper-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a constant C# field should begin with an upper-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1303.md",
+        "messageFormat": "Const field names should begin with upper-case letter.",
+        "customTags": []
+      },
+      {
+        "id": "SA1304",
+        "title": "Non-private readonly fields should begin with upper-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a non-private readonly C# field should being with an upper-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1304.md",
+        "messageFormat": "Non-private readonly fields should begin with upper-case letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1305",
+        "title": "Field names should not use Hungarian notation",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a field or variable in C# uses Hungarian notation.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1305.md",
+        "messageFormat": "{0} '{1}' should not use Hungarian notation",
+        "customTags": []
+      },
+      {
+        "id": "SA1306",
+        "title": "Field names should begin with lower-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a field in C# does not begin with a lower-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1306.md",
+        "messageFormat": "Field '{0}' should begin with lower-case letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1307",
+        "title": "Accessible fields should begin with upper-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a public or internal field in C# does not begin with an upper-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1307.md",
+        "messageFormat": "Field '{0}' should begin with upper-case letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1308",
+        "title": "Variable names should not be prefixed",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "A field name in C# is prefixed with 'm_', 's_', or 't_'.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1308.md",
+        "messageFormat": "Field '{0}' should not begin with the prefix '{1}'",
+        "customTags": []
+      },
+      {
+        "id": "SA1309",
+        "title": "Field names should not begin with underscore",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "A field name in C# begins with an underscore.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1309.md",
+        "messageFormat": "Field '{0}' should not begin with an underscore",
+        "customTags": []
+      },
+      {
+        "id": "SA1310",
+        "title": "Field names should not contain underscore",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "A field name in C# contains an underscore.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1310.md",
+        "messageFormat": "Field '{0}' should not contain an underscore",
+        "customTags": []
+      },
+      {
+        "id": "SA1311",
+        "title": "Static readonly fields should begin with upper-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a static readonly field does not begin with an upper-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1311.md",
+        "messageFormat": "Static readonly fields should begin with upper-case letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1312",
+        "title": "Variable names should begin with lower-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a variable in C# does not begin with a lower-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1312.md",
+        "messageFormat": "Variable '{0}' should begin with lower-case letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1313",
+        "title": "Parameter names should begin with lower-case letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a parameter in C# does not begin with a lower-case letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1313.md",
+        "messageFormat": "Parameter '{0}' should begin with lower-case letter",
+        "customTags": []
+      },
+      {
+        "id": "SA1314",
+        "title": "Type parameter names should begin with T",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "The name of a C# type parameter does not begin with the capital letter T.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1314.md",
+        "messageFormat": "Type parameter names should begin with T",
+        "customTags": []
+      },
+      {
+        "id": "SA1400",
+        "title": "Access modifier should be declared",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "The access modifier for a C# element has not been explicitly defined.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1400.md",
+        "messageFormat": "Element '{0}' should declare an access modifier",
+        "customTags": []
+      },
+      {
+        "id": "SA1401",
+        "title": "Fields should be private",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A field within a C# class has an access modifier other than private.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1401.md",
+        "messageFormat": "Field should be private",
+        "customTags": []
+      },
+      {
+        "id": "SA1402",
+        "title": "File may only contain a single type",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# code file contains more than one unique type.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1402.md",
+        "messageFormat": "File may only contain a single type",
+        "customTags": []
+      },
+      {
+        "id": "SA1403",
+        "title": "File may only contain a single namespace",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# code file contains more than one namespace.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1403.md",
+        "messageFormat": "File may only contain a single namespace",
+        "customTags": []
+      },
+      {
+        "id": "SA1404",
+        "title": "Code analysis suppression should have justification",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A Code Analysis SuppressMessage attribute does not include a justification.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1404.md",
+        "messageFormat": "Code analysis suppression should have justification",
+        "customTags": []
+      },
+      {
+        "id": "SA1405",
+        "title": "Debug.Assert should provide message text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A call to Debug.Assert in C# code does not include a descriptive message.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1405.md",
+        "messageFormat": "Debug.Assert should provide message text",
+        "customTags": []
+      },
+      {
+        "id": "SA1406",
+        "title": "Debug.Fail should provide message text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A call to Debug.Fail in C# code does not include a descriptive message.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1406.md",
+        "messageFormat": "Debug.Fail should provide message text",
+        "customTags": []
+      },
+      {
+        "id": "SA1407",
+        "title": "Arithmetic expressions should declare precedence",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# statement contains a complex arithmetic expression which omits parenthesis around operators.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1407.md",
+        "messageFormat": "Arithmetic expressions should declare precedence",
+        "customTags": []
+      },
+      {
+        "id": "SA1408",
+        "title": "Conditional expressions should declare precedence",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# statement contains a complex conditional expression which omits parenthesis around operators.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1408.md",
+        "messageFormat": "Conditional expressions should declare precedence",
+        "customTags": []
+      },
+      {
+        "id": "SA1409",
+        "title": "Remove unnecessary code",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A C# file contains code which is unnecessary and can be removed without changing the overall logic of the code.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1409.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1410",
+        "title": "Remove delegate parenthesis when possible",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "A call to a C# anonymous method does not contain any method parameters, yet the statement still includes parenthesis.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1410.md",
+        "messageFormat": "Remove delegate parenthesis when possible",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "SA1411",
+        "title": "Attribute constructor should not use unnecessary parenthesis",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "TODO.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1411.md",
+        "messageFormat": "Attribute constructor should not use unnecessary parenthesis",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "SA1412",
+        "title": "Store files as UTF-8 with byte order mark",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.MaintainabilityRules",
+        "description": "Source files should be saved using the UTF-8 encoding with a byte order mark",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1412.md",
+        "messageFormat": "Store files as UTF-8 with byte order mark",
+        "customTags": []
+      },
+      {
+        "id": "SA1413",
+        "title": "Use trailing comma in multi-line initializers",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A multi-line initializer in a C# code file should use a comma on the last line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1413.md",
+        "messageFormat": "Use trailing comma in multi-line initializers",
+        "customTags": []
+      },
+      {
+        "id": "SA1500",
+        "title": "Braces for multi-line statements should not share line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The opening or closing brace within a C# statement, element, or expression is not placed on its own line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1500.md",
+        "messageFormat": "Braces for multi-line statements should not share line",
+        "customTags": []
+      },
+      {
+        "id": "SA1501",
+        "title": "Statement should not be on a single line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "A C# statement containing opening and closing braces is written completely on a single line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1501.md",
+        "messageFormat": "Statement should not be on a single line",
+        "customTags": []
+      },
+      {
+        "id": "SA1502",
+        "title": "Element should not be on a single line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "A C# element containing opening and closing braces is written completely on a single line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1502.md",
+        "messageFormat": "Element should not be on a single line",
+        "customTags": []
+      },
+      {
+        "id": "SA1503",
+        "title": "Braces should not be omitted",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The opening and closing braces for a C# statement have been omitted.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1503.md",
+        "messageFormat": "Braces should not be omitted",
+        "customTags": []
+      },
+      {
+        "id": "SA1504",
+        "title": "All accessors should be single-line or multi-line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "Within a C# property, indexer or event, at least one of the child accessors is written on a single line, and at least one of the child accessors is written across multiple lines.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1504.md",
+        "messageFormat": "All accessors should be single-line or multi-line",
+        "customTags": []
+      },
+      {
+        "id": "SA1505",
+        "title": "Opening braces should not be followed by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "An opening brace within a C# element, statement, or expression is followed by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1505.md",
+        "messageFormat": "An opening brace should not be followed by a blank line.",
+        "customTags": []
+      },
+      {
+        "id": "SA1506",
+        "title": "Element documentation headers should not be followed by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "An element documentation header above a C# element is followed by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1506.md",
+        "messageFormat": "Element documentation headers should not be followed by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1507",
+        "title": "Code should not contain multiple blank lines in a row",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The C# code contains multiple blank lines in a row.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1507.md",
+        "messageFormat": "Code should not contain multiple blank lines in a row",
+        "customTags": []
+      },
+      {
+        "id": "SA1508",
+        "title": "Closing braces should not be preceded by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "A closing brace within a C# element, statement, or expression is preceded by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1508.md",
+        "messageFormat": "A closing brace should not be preceded by a blank line.",
+        "customTags": []
+      },
+      {
+        "id": "SA1509",
+        "title": "Opening braces should not be preceded by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "An opening brace within a C# element, statement, or expression is preceded by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1509.md",
+        "messageFormat": "Opening braces should not be preceded by blank line.",
+        "customTags": []
+      },
+      {
+        "id": "SA1510",
+        "title": "Chained statement blocks should not be preceded by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "Chained C# statements are separated by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1510.md",
+        "messageFormat": "'{0}' statement should not be preceded by a blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1511",
+        "title": "While-do footer should not be preceded by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The while footer at the bottom of a do-while statement is separated from the statement by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1511.md",
+        "messageFormat": "While-do footer should not be preceded by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1512",
+        "title": "Single-line comments should not be followed by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "A single-line comment within C# code is followed by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1512.md",
+        "messageFormat": "Single-line comments should not be followed by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1513",
+        "title": "Closing brace should be followed by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "A closing brace within a C# element, statement, or expression is not followed by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1513.md",
+        "messageFormat": "Closing brace should be followed by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1514",
+        "title": "Element documentation header should be preceded by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "An element documentation header above a C# element is not preceded by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1514.md",
+        "messageFormat": "Element documentation header should be preceded by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1515",
+        "title": "Single-line comment should be preceded by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "A single-line comment within C# code is not preceded by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1515.md",
+        "messageFormat": "Single-line comment should be preceded by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1516",
+        "title": "Elements should be separated by blank line",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "Adjacent C# elements are not separated by a blank line.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1516.md",
+        "messageFormat": "Elements should be separated by blank line",
+        "customTags": []
+      },
+      {
+        "id": "SA1517",
+        "title": "Code should not contain blank lines at start of file",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The code file has blank lines at the start.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1517.md",
+        "messageFormat": "Code should not contain blank lines at start of file",
+        "customTags": []
+      },
+      {
+        "id": "SA1518",
+        "title": "Use line endings correctly at end of file",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "Code should not contain blank lines at the end of the file",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1518.md",
+        "messageFormat": "Code should not contain blank lines at the end of the file",
+        "customTags": []
+      },
+      {
+        "id": "SA1519",
+        "title": "Braces should not be omitted from multi-line child statement",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The opening and closing braces for a multi-line C# statement have been omitted.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1519.md",
+        "messageFormat": "Braces should not be omitted from multi-line child statement",
+        "customTags": []
+      },
+      {
+        "id": "SA1520",
+        "title": "Use braces consistently",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.LayoutRules",
+        "description": "The opening and closing braces of a chained if/else if/else construct were included for some clauses, but omitted for others.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1520.md",
+        "messageFormat": "Use braces consistently",
+        "customTags": []
+      },
+      {
+        "id": "SA1600",
+        "title": "Elements should be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A C# code element is missing a documentation header.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1600.md",
+        "messageFormat": "Elements should be documented",
+        "customTags": []
+      },
+      {
+        "id": "SA1601",
+        "title": "Partial elements should be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A C# partial element is missing a documentation header.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1601.md",
+        "messageFormat": "Partial elements should be documented",
+        "customTags": []
+      },
+      {
+        "id": "SA1602",
+        "title": "Enumeration items should be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "An item within a C# enumeration is missing an Xml documentation header.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1602.md",
+        "messageFormat": "Enumeration items should be documented",
+        "customTags": []
+      },
+      {
+        "id": "SA1603",
+        "title": "Documentation should contain valid XML",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML within a C# element’s document header is badly formed.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1603.md",
+        "messageFormat": "The documentation header is composed of invalid XML: {0}",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1604",
+        "title": "Element documentation should have summary",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML header documentation for a C# element is missing a <summary> tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1604.md",
+        "messageFormat": "Element documentation should have summary",
+        "customTags": []
+      },
+      {
+        "id": "SA1605",
+        "title": "Partial element documentation should have summary",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The <summary> or <content> tag within the documentation header for a C# code element is missing or empty.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1605.md",
+        "messageFormat": "Partial element documentation should have summary",
+        "customTags": []
+      },
+      {
+        "id": "SA1606",
+        "title": "Element documentation should have summary text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The <summary> tag within the documentation header for a C# code element is empty.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1606.md",
+        "messageFormat": "Element documentation should have summary text",
+        "customTags": []
+      },
+      {
+        "id": "SA1607",
+        "title": "Partial element documentation should have summary text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The <summary> or <content> tag within the documentation header for a C# code element is empty.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1607.md",
+        "messageFormat": "Partial element documentation should have summary text",
+        "customTags": []
+      },
+      {
+        "id": "SA1608",
+        "title": "Element documentation should not have default summary",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The <summary> tag within an element's XML header documentation contains the default text generated by Visual Studio during the creation of the element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1608.md",
+        "messageFormat": "Element documentation should not have default summary",
+        "customTags": []
+      },
+      {
+        "id": "SA1609",
+        "title": "Property documentation should have value",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML header documentation for a C# property does not contain a <value> tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1609.md",
+        "messageFormat": "Property documentation should have value",
+        "customTags": []
+      },
+      {
+        "id": "SA1610",
+        "title": "Property documentation should have value text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML header documentation for a C# property contains an empty <value> tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1610.md",
+        "messageFormat": "Property documentation should have value text",
+        "customTags": []
+      },
+      {
+        "id": "SA1611",
+        "title": "Element parameters should be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A C# method, constructor, delegate or indexer element is missing documentation for one or more of its parameters.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1611.md",
+        "messageFormat": "The documentation for parameter '{0}' is missing",
+        "customTags": []
+      },
+      {
+        "id": "SA1612",
+        "title": "Element parameter documentation should match element parameters",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The documentation describing the parameters to a C# method, constructor, delegate or indexer element does not match the actual parameters on the element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1612.md",
+        "messageFormat": "The parameter '{0}' does not exist.",
+        "customTags": []
+      },
+      {
+        "id": "SA1613",
+        "title": "Element parameter documentation should declare parameter name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A <param> tag within a C# element's documentation header is missing a name attribute containing the name of the parameter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1613.md",
+        "messageFormat": "Element parameter documentation should declare parameter name",
+        "customTags": []
+      },
+      {
+        "id": "SA1614",
+        "title": "Element parameter documentation should have text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A <param> tag within a C# element's documentation header is empty.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1614.md",
+        "messageFormat": "Element parameter documentation should have text",
+        "customTags": []
+      },
+      {
+        "id": "SA1615",
+        "title": "Element return value should be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A C# element is missing documentation for its return value.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1615.md",
+        "messageFormat": "Element return value should be documented",
+        "customTags": []
+      },
+      {
+        "id": "SA1616",
+        "title": "Element return value documentation should have text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The <returns> tag within a C# element's documentation header is empty.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1616.md",
+        "messageFormat": "Element return value documentation should have text",
+        "customTags": []
+      },
+      {
+        "id": "SA1617",
+        "title": "Void return value should not be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A C# code element does not contain a return value, or returns void, but the documentation header for the element contains a <returns> tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1617.md",
+        "messageFormat": "Void return value should not be documented",
+        "customTags": []
+      },
+      {
+        "id": "SA1618",
+        "title": "Generic type parameters should be documented",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A generic C# element is missing documentation for one or more of its generic type parameters.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1618.md",
+        "messageFormat": "The documentation for type parameter '{0}' is missing",
+        "customTags": []
+      },
+      {
+        "id": "SA1619",
+        "title": "Generic type parameters should be documented partial class",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A generic, partial C# element is missing documentation for one or more of its generic type parameters, and the documentation for the element contains a <summary> tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1619.md",
+        "messageFormat": "The documentation for type parameter '{0}' is missing",
+        "customTags": []
+      },
+      {
+        "id": "SA1620",
+        "title": "Generic type parameter documentation should match type parameters",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The <typeparam> tags within the Xml header documentation for a generic C# element do not match the generic type parameters on the element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1620.md",
+        "messageFormat": "The type parameter '{0}' does not exist.",
+        "customTags": []
+      },
+      {
+        "id": "SA1621",
+        "title": "Generic type parameter documentation should declare parameter name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A <typeparam> tag within the XML header documentation for a generic C# element is missing a name attribute, or contains an empty name attribute.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1621.md",
+        "messageFormat": "Generic type parameter documentation should declare parameter name.",
+        "customTags": []
+      },
+      {
+        "id": "SA1622",
+        "title": "Generic type parameter documentation should have text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A <typeparam> tag within the Xml header documentation for a generic C# element is empty.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1622.md",
+        "messageFormat": "Generic type parameter documentation should have text.",
+        "customTags": []
+      },
+      {
+        "id": "SA1623",
+        "title": "Property summary documentation should match accessors",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The documentation text within a C# property’s <summary> tag does not match the accessors within the property.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1623.md",
+        "messageFormat": "The property's documentation summary text should begin with: '{0}'",
+        "customTags": []
+      },
+      {
+        "id": "SA1624",
+        "title": "Property summary documentation should omit accessor with restricted access",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The documentation text within a C# property’s <summary> tag takes into account all of the accessors within the property, but one of the accessors has limited access.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1624.md",
+        "messageFormat": "Because the property only contains a visible {0} accessor, the documentation summary text should begin with '{1}'.",
+        "customTags": []
+      },
+      {
+        "id": "SA1625",
+        "title": "Element documentation should not be copied and pasted",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The Xml documentation for a C# element contains two or more identical entries, indicating that the documentation has been copied and pasted. This can sometimes indicate invalid or poorly written documentation.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1625.md",
+        "messageFormat": "Element documentation should not be copied and pasted",
+        "customTags": []
+      },
+      {
+        "id": "SA1626",
+        "title": "Single-line comments should not use documentation style slashes",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The C# code contains a single-line comment which begins with three forward slashes in a row.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1626.md",
+        "messageFormat": "Single-line comments should not use documentation style slashes",
+        "customTags": []
+      },
+      {
+        "id": "SA1627",
+        "title": "Documentation text should not be empty",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML header documentation for a C# code element contains an empty tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1627.md",
+        "messageFormat": "The documentation text within the \\'{0}\\' tag should not be empty.",
+        "customTags": []
+      },
+      {
+        "id": "SA1628",
+        "title": "Documentation text should begin with a capital letter",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A section of the XML header documentation for a C# element does not begin with a capital letter.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1628.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1629",
+        "title": "Documentation text should end with a period",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A section of the XML header documentation for a C# element does not end with a period.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1629.md",
+        "messageFormat": "Documentation text should end with a period",
+        "customTags": []
+      },
+      {
+        "id": "SA1630",
+        "title": "Documentation text should contain whitespace",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A section of the XML header documentation for a C# element does not contain any whitespace between words.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1630.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1631",
+        "title": "Documentation should meet character percentage",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A section of the Xml header documentation for a C# element does not contain enough alphabetic characters.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1631.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1632",
+        "title": "Documentation text should meet minimum character length",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A section of the Xml header documentation for a C# element is too short.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1632.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1633",
+        "title": "File should have header",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A C# code file is missing a standard file header.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1633.md",
+        "messageFormat": "The file header is missing or not located at the top of the file.",
+        "customTags": []
+      },
+      {
+        "id": "SA1634",
+        "title": "File header should show copyright",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file is missing a copyright tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1634.md",
+        "messageFormat": "The file header should contain a copyright tag.",
+        "customTags": []
+      },
+      {
+        "id": "SA1635",
+        "title": "File header should have copyright text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file is missing copyright text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1635.md",
+        "messageFormat": "File header should have copyright text",
+        "customTags": []
+      },
+      {
+        "id": "SA1636",
+        "title": "File header copyright text should match",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file does not contain the appropriate copyright text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1636.md",
+        "messageFormat": "The file header copyright text should match the copyright text from the settings.",
+        "customTags": []
+      },
+      {
+        "id": "SA1637",
+        "title": "File header should contain file name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file is missing the file name.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1637.md",
+        "messageFormat": "File header should contain file name.",
+        "customTags": []
+      },
+      {
+        "id": "SA1638",
+        "title": "File header file name documentation should match file name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file attribute within copyright tag of the file header at the top of a C# code file does not contain the name of the file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1638.md",
+        "messageFormat": "File header file name documentation should match file name.",
+        "customTags": []
+      },
+      {
+        "id": "SA1639",
+        "title": "File header should have summary",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file does not contain a filled-in summary tag.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1639.md",
+        "messageFormat": "File header should have summary",
+        "customTags": []
+      },
+      {
+        "id": "SA1640",
+        "title": "File header should have valid company text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file does not contain company name text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1640.md",
+        "messageFormat": "The copyright tag should contain a non-empty company attribute.",
+        "customTags": []
+      },
+      {
+        "id": "SA1641",
+        "title": "File header company name text should match",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file header at the top of a C# code file does not contain the appropriate company name text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1641.md",
+        "messageFormat": "The file header company name should match the company name from the settings.",
+        "customTags": []
+      },
+      {
+        "id": "SA1642",
+        "title": "Constructor summary documentation should begin with standard text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML documentation header for a C# constructor does not contain the appropriate summary text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1642.md",
+        "messageFormat": "Constructor summary documentation should begin with standard text",
+        "customTags": []
+      },
+      {
+        "id": "SA1643",
+        "title": "Destructor summary documentation should begin with standard text",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The XML documentation header for a C# finalizer does not contain the appropriate summary text.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1643.md",
+        "messageFormat": "Destructor summary documentation should begin with standard text",
+        "customTags": []
+      },
+      {
+        "id": "SA1644",
+        "title": "Documentation headers should not contain blank lines",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "A section within the XML documentation header for a C# element contains blank lines.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1644.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1645",
+        "title": "Included documentation file does not exist",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "An included XML documentation file does not exist.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1645.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1646",
+        "title": "Included documentation XPath does not exist",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "An included XML documentation link contains an invalid path.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1646.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1647",
+        "title": "Include node does not contain valid file and path",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "An include tag within an XML documentation header does not contain valid file and path attribute.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1647.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1648",
+        "title": "inheritdoc should be used with inheriting class",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "<inheritdoc> has been used on an element that doesn't inherit from a base class or implement an interface.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1648.md",
+        "messageFormat": "inheritdoc should be used with inheriting class",
+        "customTags": []
+      },
+      {
+        "id": "SA1649",
+        "title": "File name should match first type name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The file name of a C# code file does not match the first type declared in the file.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1649.md",
+        "messageFormat": "File name should match first type name.",
+        "customTags": []
+      },
+      {
+        "id": "SA1650",
+        "title": "Element documentation should be spelled correctly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The element documentation for the element contains one or more spelling mistakes or unrecognized words.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1650.md",
+        "messageFormat": "TODO: Message format",
+        "customTags": [
+          "NotConfigurable"
+        ]
+      },
+      {
+        "id": "SA1651",
+        "title": "Do not use placeholder elements",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "StyleCop.CSharp.DocumentationRules",
+        "description": "The element documentation contains a <placeholder> element.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1651.md",
+        "messageFormat": "Do not use placeholder elements",
+        "customTags": []
+      },
+      {
+        "id": "SX1101",
+        "title": "Do not prefix local calls with 'this.'",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.ReadabilityRules",
+        "description": "A call to an instance member of the local class or a base class is prefixed with `this.`.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SX1101.md",
+        "messageFormat": "Do not prefix local calls with 'this.'",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "SX1309",
+        "title": "Field names should begin with underscore",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "A field name in C# does not begin with an underscore.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SX1309.md",
+        "messageFormat": "Field '{0}' should begin with an underscore",
+        "customTags": []
+      },
+      {
+        "id": "SX1309S",
+        "title": "Static field names should begin with underscore",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "StyleCop.CSharp.NamingRules",
+        "description": "A static field name in C# does not begin with an underscore.",
+        "helpLinkUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SX1309S.md",
+        "messageFormat": "Static field '{0}' should begin with an underscore",
+        "customTags": []
+      }
+    ]
+  }
+]

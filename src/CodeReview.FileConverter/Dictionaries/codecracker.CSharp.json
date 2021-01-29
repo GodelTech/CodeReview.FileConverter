@@ -1,0 +1,914 @@
+[
+  {
+    "id": "codecracker.CSharp",
+    "version": "1.1.0",
+    "description": "A analyzer library for C# that uses Roslyn to produce refactorings, code analysis, and other niceties.\n\nThis is a community project, free and open source. Everyone is invited to contribute, fork, share and use the code. No money shall be charged by this software, nor it will be. Ever.",
+    "diagnostics": [
+      {
+        "id": "CC0001",
+        "title": "You should use 'var' whenever possible.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Usage of an implicit type improve readability of the code.\r\nCode depending on types for their readability should be refactored with better variable names or by introducing well-named methods.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0001.html",
+        "messageFormat": "Use 'var' instead of specifying the type name.",
+        "customTags": []
+      },
+      {
+        "id": "CC0002",
+        "title": "Invalid argument name",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "The string passed as the 'paramName' argument of ArgumentException constructor must be the name of one of the method arguments.\r\nIt can be either specified directly or using the nameof() operator (C#6 only)",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0002.html",
+        "messageFormat": "Type argument '{0}' is not in the argument list.",
+        "customTags": []
+      },
+      {
+        "id": "CC0003",
+        "title": "Your catch should include an Exception",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0003.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0004",
+        "title": "Catch block cannot be empty",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "An empty catch block suppress all errors and shouldn't be used.\\r\\nIf the error is expected consider logging it or changing the control flow such that it is explicit.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0004.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0005",
+        "title": "Empty Object Initializer",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "An object initializer without any arguments can be replaced with the standard constructor syntax.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0005.html",
+        "messageFormat": "{0}",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0006",
+        "title": "Use foreach",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0006.html",
+        "messageFormat": "You can use foreach instead of for.",
+        "customTags": []
+      },
+      {
+        "id": "CC0007",
+        "title": "Return Condition directly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "Using an if/else statement to return a boolean can be replaced by directly returning a boolean.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0007.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0008",
+        "title": "Use object initializer",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "When possible an object initializer should be used to initialize the properties of an object instead of multiple assignments.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0008.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0009",
+        "title": "Use object initializer",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "When possible an object initializer should be used to initialize the properties of an object instead of multiple assignments.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0009.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0010",
+        "title": "Your regex expression is incorrect",
+        "defaultSeverity": "Error",
+        "isEnabledByDefault": true,
+        "category": "Naming",
+        "description": "There is an error in your regex expression.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0010.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0011",
+        "title": "You should remove the 'Where' invocation when it is possible.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "When a linq operator support a predicate parameter it should be used instead of using 'Where' followed by the operator",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0011.html",
+        "messageFormat": "You can remove 'Where' moving the predicate to '{0}'.",
+        "customTags": []
+      },
+      {
+        "id": "CC0012",
+        "title": "Your throw does nothing",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Naming",
+        "description": "If a exception is caught and then thrown again the original stack trace will be lost. Instead it is best to throw the exception without using any parameters.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0012.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0013",
+        "title": "Use ternary operator",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0013.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0014",
+        "title": "Use ternary operator",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0014.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0015",
+        "title": "Unnecessary Parenthesis",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "There is no need to specify that the no-parameter constructor is used with  an initializer as it is implicit",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0015.html",
+        "messageFormat": "{0}",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0017",
+        "title": "Use auto property",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Auto properties offer a more concise way of defining a property. If you are using simple getters and setters you are able to simplify your code with autoproperties.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0017.html",
+        "messageFormat": "Change {0} to an auto property",
+        "customTags": []
+      },
+      {
+        "id": "CC0018",
+        "title": "Use the existence operator",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "The null-propagating operator allow for terse code to handle potentially null variables.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0018.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0019",
+        "title": "Use 'switch'",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Multiple 'if' and 'else if' on the same variable can be replaced with a 'switch'on the variable\r\n\r\nNote: This diagnostic trigger for 3 or more 'case' statements",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0019.html",
+        "messageFormat": "You could use 'switch' instead of 'if'.",
+        "customTags": []
+      },
+      {
+        "id": "CC0020",
+        "title": "You should remove the lambda expression when it only invokes a method with the same signature",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "The extra unnecessary layer of indirection induced by the lambda expression may be avoided by passing the method group instead.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0020.html",
+        "messageFormat": "You should remove the lambda expression and pass just '{0}' instead.",
+        "customTags": []
+      },
+      {
+        "id": "CC0021",
+        "title": "Use nameof",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "In C#6 the nameof() operator should be used to specify the name of a program element instead of a string literal as it produce code that is easier to refactor.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0021.html",
+        "messageFormat": "Use 'nameof({0})' instead of specifying the program element name.",
+        "customTags": []
+      },
+      {
+        "id": "CC0022",
+        "title": "Should dispose object",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "When a disposable object is created it should be disposed as soon as possible.\nThis warning will appear if you create a disposable object and don't store, return or dispose it.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0022.html",
+        "messageFormat": "{0} should be disposed.",
+        "customTags": []
+      },
+      {
+        "id": "CC0023",
+        "title": "Unsealed Attribute",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "Framework methods that retrieve attributes by default search the whole inheritence hierarchy of the attribute class. Marking the type as sealed eliminate this search and can improve performance",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0023.html",
+        "messageFormat": "Mark '{0}' as sealed.",
+        "customTags": []
+      },
+      {
+        "id": "CC0024",
+        "title": "Don't throw exceptions inside static constructors.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "Static constructors are called before a class is used for the first time. Exceptions thrown in static constructors force the use of a try block and should be avoided.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0024.html",
+        "messageFormat": "Don't throw exceptions inside static constructors.",
+        "customTags": []
+      },
+      {
+        "id": "CC0025",
+        "title": "Remove Empty Finalizers",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "An empty finalizer will stop your object from being collected immediately by the Garbage Collector when no longer used.It will instead be placed in the finalizer queue needlessly using resources.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0025.html",
+        "messageFormat": "Remove Empty Finalizers",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0026",
+        "title": "Call Extension Method As Extension",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0026.html",
+        "messageFormat": "Do not call '{0}' method of class '{1}' as a static method",
+        "customTags": []
+      },
+      {
+        "id": "CC0029",
+        "title": "Disposables Should Call Suppress Finalize",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Naming",
+        "description": "Classes implementing IDisposable should call the GC.SuppressFinalize method in their finalize method to avoid any finalizer from being called.\r\nThis rule should be followed even if the class doesn't have a finalizer as a derived class could have one.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0029.html",
+        "messageFormat": "'{0}' should call GC.SuppressFinalize inside the Dispose method.",
+        "customTags": []
+      },
+      {
+        "id": "CC0030",
+        "title": "Make Local Variable Constant.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "This variable is assigned a constant value and never changed it can be made 'const'",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0030.html",
+        "messageFormat": "This variable can be made const.",
+        "customTags": []
+      },
+      {
+        "id": "CC0031",
+        "title": "Check for null before calling a delegate",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "In C#6 a delegate can be invoked using the null-propagating operator (?.) and it's invoke method to avoid throwing a NullReference exception when there is no method attached to the delegate. Or you can check for null before calling the delegate.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0031.html",
+        "messageFormat": "Verify if delegate '{0}' is null before invoking it.",
+        "customTags": []
+      },
+      {
+        "id": "CC0032",
+        "title": "Dispose Fields Properly",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "This class has a disposable field and is not disposing it.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0032.html",
+        "messageFormat": "Field {0} should be disposed.",
+        "customTags": []
+      },
+      {
+        "id": "CC0033",
+        "title": "Dispose Fields Properly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "This class has a disposable field and is not disposing it.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0033.html",
+        "messageFormat": "Field {0} should be disposed.",
+        "customTags": []
+      },
+      {
+        "id": "CC0034",
+        "title": "Redundant field assignment",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "It's recommend not to assign the default value to a field as a performance optimization.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0034.html",
+        "messageFormat": "Field {0} is assigning to default value {1}. Remove the assignment.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0035",
+        "title": "Ordering member inside this type.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0035.html",
+        "messageFormat": "Ordering member inside this type.",
+        "customTags": []
+      },
+      {
+        "id": "CC0037",
+        "title": "Remove commented code.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0037.html",
+        "messageFormat": "Commented code should be removed.",
+        "customTags": []
+      },
+      {
+        "id": "CC0038",
+        "title": "You should use expression bodied members whenever possible.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Usage of an expression bodied members improve readability of the code.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0038.html",
+        "messageFormat": "Use an expression bodied member.",
+        "customTags": []
+      },
+      {
+        "id": "CC0039",
+        "title": "Don't concatenate strings in loops",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "Don't concatenate strings in a loop. Using a StringBuilder will require less memory and time.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0039.html",
+        "messageFormat": "Don't concatenate '{0}' in a loop",
+        "customTags": []
+      },
+      {
+        "id": "CC0042",
+        "title": "Invert the for loop counting.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0042.html",
+        "messageFormat": "Make it a for loop that {0} the counter.",
+        "customTags": []
+      },
+      {
+        "id": "CC0043",
+        "title": "Change Any to All",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0043.html",
+        "messageFormat": "Change Any to All",
+        "customTags": []
+      },
+      {
+        "id": "CC0044",
+        "title": "You should use a class",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0044.html",
+        "messageFormat": "When the method has more than three parameters, use new class.",
+        "customTags": []
+      },
+      {
+        "id": "CC0045",
+        "title": "Regular string",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0045.html",
+        "messageFormat": "Change to regular string",
+        "customTags": []
+      },
+      {
+        "id": "CC0046",
+        "title": "Verbatim string",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0046.html",
+        "messageFormat": "Change to verbatim string",
+        "customTags": []
+      },
+      {
+        "id": "CC0047",
+        "title": "You should change to 'private set' whenever possible.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Use private set for automatic properties.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0047.html",
+        "messageFormat": "Consider using a 'private set'.",
+        "customTags": []
+      },
+      {
+        "id": "CC0048",
+        "title": "Use string interpolation instead of String.Format",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "String interpolation allows for better reading of the resulting string when compared to String.Format. You should use String.Format only when another method is supplying the format string.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0048.html",
+        "messageFormat": "Use string interpolation",
+        "customTags": []
+      },
+      {
+        "id": "CC0049",
+        "title": "Simplify expression",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0049.html",
+        "messageFormat": "You can remove this comparison.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0052",
+        "title": "Make field readonly",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "A field that is only assigned on the constructor can be made readonly.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0052.html",
+        "messageFormat": "Make '{0}' readonly",
+        "customTags": []
+      },
+      {
+        "id": "CC0054",
+        "title": "Your Json syntax is wrong",
+        "defaultSeverity": "Error",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "This diagnostic checks the json string and triggers if the parsing fail by throwing an exception.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0054.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0056",
+        "title": "Incorrect String.Format usage",
+        "defaultSeverity": "Error",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "The format argument in String.Format determines the number of other arguments that need to be passed into the method based on the number of curly braces {} used. The incorrect number of arguments are being passed.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0056.html",
+        "messageFormat": "Invalid argument reference in String.Format.",
+        "customTags": []
+      },
+      {
+        "id": "CC0057",
+        "title": "Unused parameters",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "A method with an unused parameter creates unnecessary confusion and should be deleted.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0057.html",
+        "messageFormat": "Parameter '{0}' is not used.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0060",
+        "title": "Abstract class should not have public constructors.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0060.html",
+        "messageFormat": "Constructor should not be public.",
+        "customTags": []
+      },
+      {
+        "id": "CC0061",
+        "title": "Asynchronous method can be terminated with the 'Async' keyword.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Asynchronous method can be terminated with the 'Async' keyword.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0061.html",
+        "messageFormat": "Change method name to {0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0062",
+        "title": "You should add letter 'I' before interface name.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Consider naming interfaces starting with 'I'.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0062.html",
+        "messageFormat": "Consider naming interfaces starting with 'I'.",
+        "customTags": []
+      },
+      {
+        "id": "CC0063",
+        "title": "Your Uri syntax is wrong.",
+        "defaultSeverity": "Error",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "This diagnostic checks the Uri string and triggers if the parsing fail by throwing an exception.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0063.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0064",
+        "title": "Your IP Address syntax is incorrect.",
+        "defaultSeverity": "Error",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "An error was found parsing the IP Address string.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0064.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0065",
+        "title": "Remove trailing whitespace",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Trailing whitespaces are ugly and show sloppiness. Remove them.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0065.html",
+        "messageFormat": "Remove trailing whitespace",
+        "customTags": []
+      },
+      {
+        "id": "CC0067",
+        "title": "Virtual Method Called On Constructor",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "When a virtual method is called, the actual type that executes the method is not selected until run time. When a constructor calls a virtual method, it is possible that the constructor for the instance that invokes the method has not executed.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0067.html",
+        "messageFormat": "Do not call overridable methods in constructors",
+        "customTags": []
+      },
+      {
+        "id": "CC0068",
+        "title": "Unused Method",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "Unused private methods can be safely removed as they are unnecessary.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0068.html",
+        "messageFormat": "Method is not used.",
+        "customTags": []
+      },
+      {
+        "id": "CC0070",
+        "title": "Use ConfigureAwait(false) on awaited task.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Reliability",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0070.html",
+        "messageFormat": "Consider using ConfigureAwait(false) on the awaited task.",
+        "customTags": []
+      },
+      {
+        "id": "CC0071",
+        "title": "Consider introduce field for constructor parameters.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "Consider introduce field for constructor parameters.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0071.html",
+        "messageFormat": "Introduce a field for parameter: {0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0072",
+        "title": "Remove Async termination when method is not asynchronous.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Remove Async termination when method is not asynchronous.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0072.html",
+        "messageFormat": "Consider remove 'Async' from method {0}.",
+        "customTags": []
+      },
+      {
+        "id": "CC0073",
+        "title": "Add braces to switch sections.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0073.html",
+        "messageFormat": "Add braces for each section in this switch",
+        "customTags": []
+      },
+      {
+        "id": "CC0074",
+        "title": "Make field readonly",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "A field that is only assigned on the constructor can be made readonly.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0074.html",
+        "messageFormat": "Make '{0}' readonly",
+        "customTags": []
+      },
+      {
+        "id": "CC0075",
+        "title": "Merge nested ifs",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0075.html",
+        "messageFormat": "Merge nested ifs into a single if",
+        "customTags": []
+      },
+      {
+        "id": "CC0076",
+        "title": "Split into nested if",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0076.html",
+        "messageFormat": "Split into nested if.",
+        "customTags": []
+      },
+      {
+        "id": "CC0079",
+        "title": "Change numeric literal expression",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0079.html",
+        "messageFormat": "You may change {0} to a {1} literal type.",
+        "customTags": []
+      },
+      {
+        "id": "CC0081",
+        "title": "Use of Regex.IsMatch might be improved",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Performance",
+        "description": "Instantiating the Regex object multiple times might be bad for performance. You may want to use the static IsMatch method from Regex class and/or compile the regex.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0081.html",
+        "messageFormat": "Use of Regex.IsMatch might be improved",
+        "customTags": []
+      },
+      {
+        "id": "CC0082",
+        "title": "Change for expression value",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "You may change an expression for its value if the expression is made of literal values.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0082.html",
+        "messageFormat": "Change '{0}' for expression value",
+        "customTags": []
+      },
+      {
+        "id": "CC0084",
+        "title": "Consider use 'String.Empty'",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Consider user 'String.Empty' instead of \"\"",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0084.html",
+        "messageFormat": "Use 'String.Empty' instead of \"\"",
+        "customTags": []
+      },
+      {
+        "id": "CC0088",
+        "title": "Consider use \"\"",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Consider using \"\" instead of 'string.Empty'",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0088.html",
+        "messageFormat": "Use \"\" instead of 'string.Empty'",
+        "customTags": []
+      },
+      {
+        "id": "CC0089",
+        "title": "Remove redundant else.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "An empty else clause only adds complexity. You may safely remove it.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0089.html",
+        "messageFormat": "Remove redundant else",
+        "customTags": []
+      },
+      {
+        "id": "CC0090",
+        "title": "You have missing/unexistent parameters in Xml Docs",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0090.html",
+        "messageFormat": "You have missing/unexistent parameters in Xml Docs",
+        "customTags": []
+      },
+      {
+        "id": "CC0091",
+        "title": "Use static method",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "If the method is not referencing any instance variable and if you are not creating a virtual, abstract, new or partial method, and if it is not a method override, your instance method may be changed to a static method.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0091.html",
+        "messageFormat": "Make '{0}' method static.",
+        "customTags": []
+      },
+      {
+        "id": "CC0092",
+        "title": "Change All to Any",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0092.html",
+        "messageFormat": "Change All to Any",
+        "customTags": []
+      },
+      {
+        "id": "CC0095",
+        "title": "Use string interpolation instead of arguments on Console.WriteLine",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "String interpolation allows for better reading of the resulting string when compared to Console.WriteLine arguments. You should use Console.WriteLine with arguments only when another method is supplying the format string.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0095.html",
+        "messageFormat": "Use string interpolation",
+        "customTags": []
+      },
+      {
+        "id": "CC0097",
+        "title": "You have missing/unexistent parameters in Xml Docs",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Maintainability",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0097.html",
+        "messageFormat": "You have missing/unexistent parameters in Xml Docs",
+        "customTags": []
+      },
+      {
+        "id": "CC0105",
+        "title": "You should use 'var' whenever possible.",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "Usage of an implicit type improve readability of the code.\r\nCode depending on types for their readability should be refactored with better variable names or by introducing well-named methods.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0105.html",
+        "messageFormat": "Use 'var' instead of specifying the type name.",
+        "customTags": []
+      },
+      {
+        "id": "CC0106",
+        "title": "PropertyChangedEventArgs unnecessary allocation",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "Creating every time an instance of PropertyChangedEventArgs class causes unnecessary memory allocation. Instance can be created once and reused.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0106.html",
+        "messageFormat": "Create PropertyChangedEventArgs static instance and reuse it to avoid unecessary memory allocation.",
+        "customTags": []
+      },
+      {
+        "id": "CC0108",
+        "title": "Use nameof",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "Design",
+        "description": "In C#6 the nameof() operator should be used to specify the name of a program element instead of a string literal as it produce code that is easier to refactor.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0108.html",
+        "messageFormat": "Use 'nameof({0})' instead of specifying the program element name.",
+        "customTags": []
+      },
+      {
+        "id": "CC0111",
+        "title": "Incorrect String.Format usage",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Usage",
+        "description": "The format argument in String.Format determines the number of other arguments that need to be passed into the method based on the number of curly braces {} used. The incorrect number of arguments are being passed.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0111.html",
+        "messageFormat": "The number of arguments in String.Format is incorrect.",
+        "customTags": []
+      },
+      {
+        "id": "CC0118",
+        "title": "Unnecessary '.ToString()' call in string concatenation.",
+        "defaultSeverity": "Info",
+        "isEnabledByDefault": true,
+        "category": "Style",
+        "description": "The runtime automatically calls '.ToString()' method for string concatenation operations when there is no parameters. Remove them.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0118.html",
+        "messageFormat": "Unnecessary '.ToString()' call in string concatenation.",
+        "customTags": [
+          "Unnecessary"
+        ]
+      },
+      {
+        "id": "CC0120",
+        "title": "Your Switch maybe include default clause",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": true,
+        "category": "Design",
+        "description": "",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0120.html",
+        "messageFormat": "{0}",
+        "customTags": []
+      },
+      {
+        "id": "CC0121",
+        "title": "Complex fields must be readonly",
+        "defaultSeverity": "Warning",
+        "isEnabledByDefault": false,
+        "category": "Usage",
+        "description": "Complex fields must be readonly",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0121.html",
+        "messageFormat": "Make '{0}' readonly",
+        "customTags": []
+      },
+      {
+        "id": "CC0125",
+        "title": "Property can be simplified by using an getter-only auto-property.",
+        "defaultSeverity": "Hidden",
+        "isEnabledByDefault": true,
+        "category": "Refactoring",
+        "description": "Getter only properties with backing read-only field can be converted to getter-only auto-properties.",
+        "helpLinkUri": "https://code-cracker.github.io/diagnostics/CC0125.html",
+        "messageFormat": "Property {0} can be converted to an getter-only auto-property.",
+        "customTags": []
+      }
+    ]
+  }
+]
