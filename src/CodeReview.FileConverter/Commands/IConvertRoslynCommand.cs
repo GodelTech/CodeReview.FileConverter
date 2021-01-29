@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using ReviewItEasy.FileConverter.Options;
+using GodelTech.CodeReview.FileConverter.Options;
 
-namespace ReviewItEasy.FileConverter.Commands
+namespace GodelTech.CodeReview.FileConverter.Commands
 {
     public interface IConvertRoslynCommand
     {

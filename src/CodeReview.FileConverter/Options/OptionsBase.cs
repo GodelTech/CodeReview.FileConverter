@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 
-namespace ReviewItEasy.FileConverter.Options
+namespace GodelTech.CodeReview.FileConverter.Options
 {
     public abstract class OptionsBase
     {

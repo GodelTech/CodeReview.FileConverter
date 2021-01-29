@@ -1,4 +1,4 @@
-﻿namespace ReviewItEasy.FileConverter.Models
+﻿namespace GodelTech.CodeReview.FileConverter.Models
 {
     public enum IssueLevel
     {

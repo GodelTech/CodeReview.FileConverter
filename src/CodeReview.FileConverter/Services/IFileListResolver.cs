@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ReviewItEasy.FileConverter.Options;
+using GodelTech.CodeReview.FileConverter.Options;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public interface IFileListResolver
     {

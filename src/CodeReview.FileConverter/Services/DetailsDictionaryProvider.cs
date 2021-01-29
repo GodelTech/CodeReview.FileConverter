@@ -5,7 +5,7 @@ using System.Linq;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public class DetailsDictionaryProvider : IDetailsDictionaryProvider
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public interface IDetailsDictionaryProvider
     {

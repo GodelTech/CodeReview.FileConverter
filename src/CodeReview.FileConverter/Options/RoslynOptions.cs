@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 
-namespace ReviewItEasy.FileConverter.Options
+namespace GodelTech.CodeReview.FileConverter.Options
 {
     [Verb("roslyn", HelpText = "Convert .NET Compliper output into unified format.")]
     public class RoslynOptions : OptionsBase

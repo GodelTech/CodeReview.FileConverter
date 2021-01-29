@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace ReviewItEasy.FileConverter.Models
+namespace GodelTech.CodeReview.FileConverter.Models
 {
     public class Issue
     {

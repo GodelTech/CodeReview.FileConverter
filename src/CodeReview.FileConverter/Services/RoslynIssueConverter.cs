@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using GodelTech.CodeReview.FileConverter.Models;
 using Newtonsoft.Json;
-using ReviewItEasy.FileConverter.Models;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public class RoslynIssueConverter : IRoslynIssueConverter
     {

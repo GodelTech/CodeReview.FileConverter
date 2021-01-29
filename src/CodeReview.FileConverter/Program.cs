@@ -3,15 +3,15 @@ using System.IO;
 using System.Threading.Tasks;
 using CommandLine;
 using CommandLine.Text;
+using GodelTech.CodeReview.FileConverter.Commands;
+using GodelTech.CodeReview.FileConverter.Models;
+using GodelTech.CodeReview.FileConverter.Options;
+using GodelTech.CodeReview.FileConverter.Services;
+using GodelTech.CodeReview.FileConverter.Utils;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using ReviewItEasy.FileConverter.Commands;
-using ReviewItEasy.FileConverter.Models;
-using ReviewItEasy.FileConverter.Options;
-using ReviewItEasy.FileConverter.Services;
-using ReviewItEasy.FileConverter.Utils;
 
-namespace ReviewItEasy.FileConverter
+namespace GodelTech.CodeReview.FileConverter
 {
     // 1. If tool is published to NuGet it can be executed within pipline which has access to Docker Service and .NET Core
     // 2. Add support for error hashes. This option should simplify comparison of old and new errors later

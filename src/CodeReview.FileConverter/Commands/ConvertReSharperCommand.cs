@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using GodelTech.CodeReview.FileConverter.Models;
+using GodelTech.CodeReview.FileConverter.Options;
+using GodelTech.CodeReview.FileConverter.Services;
 using Microsoft.Extensions.Logging;
-using ReviewItEasy.FileConverter.Models;
-using ReviewItEasy.FileConverter.Options;
-using ReviewItEasy.FileConverter.Services;
 
-namespace ReviewItEasy.FileConverter.Commands
+namespace GodelTech.CodeReview.FileConverter.Commands
 {
     public class ConvertReSharperCommand : IConvertReSharperCommand
     {

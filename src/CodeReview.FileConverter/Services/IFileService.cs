@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System.Threading.Tasks;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public interface IFileService
     {

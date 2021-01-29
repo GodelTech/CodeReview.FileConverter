@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
 using System.Xml.XPath;
-using ReviewItEasy.FileConverter.Models;
+using GodelTech.CodeReview.FileConverter.Models;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public class ReSharperFileConverter : IReSharperFileConverter
     {

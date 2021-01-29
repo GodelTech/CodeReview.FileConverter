@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using ReviewItEasy.FileConverter.Models;
+using GodelTech.CodeReview.FileConverter.Models;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public interface IReSharperFileConverter
     {

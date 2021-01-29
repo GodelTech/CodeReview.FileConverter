@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
 using System.Threading.Tasks;
+using GodelTech.CodeReview.FileConverter.Models;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using ReviewItEasy.FileConverter.Models;
 
-namespace ReviewItEasy.FileConverter.Services
+namespace GodelTech.CodeReview.FileConverter.Services
 {
     public class IssuePersister : IIssuePersister
     {
