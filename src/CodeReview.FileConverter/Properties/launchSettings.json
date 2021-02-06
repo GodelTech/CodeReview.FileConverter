@@ -2,7 +2,7 @@
   "profiles": {
     "ReviewItEasy.FileConverter": {
       "commandName": "Project",
-      "commandLineArgs": "roslyn -o roslyn.result.zip -f d:\\_Projects\\ReviewItEasy.Orchestrator\\src\\ReviewItEasy.Orchestrator\\bin\\Debug\\net5.0\\artifacts\\roslyn -s /src/"
+      "commandLineArgs": "roslyn -o roslyn.result.zip -f ../../../../../docs/data/roslyn  -s /src/ -m *.roslyn.json"
     }
   }
 }

@@ -1,0 +1,133 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "3.8.0.0",
+        "fileVersion": "3.8.0-5.20604.10 (9ed4b774)",
+        "semanticVersion": "3.8.0",
+        "language": ""
+      },
+      "results": [
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///src/test/CodeReview.Orchestrator.Tests/ExpressionEvaluatorTests.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */\u000a",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S1451",
+          "level": "warning",
+          "message": "Add or update the header of this file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///src/test/CodeReview.Orchestrator.Tests/Services/OutputFolderPathCalculatorTests.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "HeaderFormat": "/*\u000a * SonarQube, open source software quality management tool.\u000a * Copyright (C) 2008-2013 SonarSource\u000a * mailto:contact AT sonarsource DOT com\u000a *\u000a * SonarQube is free software; you can redistribute it and/or\u000a * modify it under the terms of the GNU Lesser General Public\u000a * License as published by the Free Software Foundation; either\u000a * version 3 of the License, or (at your option) any later version.\u000a *\u000a * SonarQube is distributed in the hope that it will be useful,\u000a * but WITHOUT ANY WARRANTY; without even the implied warranty of\u000a * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\u000a * Lesser General Public License for more details.\u000a *\u000a * You should have received a copy of the GNU Lesser General Public License\u000a * along with this program; if not, write to the Free Software Foundation,\u000a * Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.\u000a */\u000a",
+              "IsRegularExpression": "False"
+            }
+          }
+        },
+        {
+          "ruleId": "S3992",
+          "level": "warning",
+          "message": "Provide a 'ComVisible' attribute for assembly 'CodeReview.Orchestrator.Tests'.",
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3990",
+          "level": "warning",
+          "message": "Provide a 'CLSCompliant' attribute for assembly 'CodeReview.Orchestrator.Tests'.",
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S1451": {
+          "id": "S1451",
+          "shortDescription": "Track lack of copyright and license headers",
+          "fullDescription": "Each source file should start with a header stating file ownership and the license which must be used to distribute the application. ",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1451",
+          "properties": {
+            "category": "Blocker Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3990": {
+          "id": "S3990",
+          "shortDescription": "Assemblies should be marked as CLS compliant",
+          "fullDescription": "Assemblies should conform with the Common Language Specification (CLS) in order to be usable across programming languages. To be compliant an assembly has to indicate it with System.CLSCompliantAttribute.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3990",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S3992": {
+          "id": "S3992",
+          "shortDescription": "Assemblies should explicitly specify COM visibility",
+          "fullDescription": "Assemblies should explicitly indicate whether they are meant to be COM visible or not. If the ComVisibleAttribute is not present, the default is to make the content of the assembly visible to COM clients.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3992",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
