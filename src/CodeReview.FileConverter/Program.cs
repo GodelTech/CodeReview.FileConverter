@@ -27,7 +27,7 @@ namespace GodelTech.CodeReview.FileConverter
                 x.HelpWriter = TextWriter.Null;
             });
 
-            var result = parser.ParseArguments<RoslynOptions, ReSharperOptions>(args);
+            var result = parser.ParseArguments<RoslynOptions, ReSharperOptions, ClocOptions>(args);
 
             var exitCode = result
                 .MapResult(
