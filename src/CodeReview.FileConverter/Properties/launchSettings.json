@@ -2,7 +2,7 @@
   "profiles": {
     "ReviewItEasy.FileConverter": {
       "commandName": "Project",
-      "commandLineArgs": "roslyn -o roslyn.result.zip -f ../../../../../docs/data/roslyn  -s /src/ -m *.roslyn.json"
+      "commandLineArgs": "cloc -o file-stat.json -f ../../../../../docs/data/cloc/report.json -p ./"
     }
   }
 }

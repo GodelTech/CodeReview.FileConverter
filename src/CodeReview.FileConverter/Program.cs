@@ -27,15 +27,21 @@ namespace GodelTech.CodeReview.FileConverter
                 x.HelpWriter = TextWriter.Null;
             });
 
-            var result = parser.ParseArguments<RoslynOptions, ReSharperOptions>(args);
+            var result = parser.ParseArguments<RoslynOptions, ReSharperOptions, ClocOptions>(args);
 
             var exitCode = result
                 .MapResult(
                     (RoslynOptions x) => ProcessRoslynResultsAsync(x, container).GetAwaiter().GetResult(),
                     (ReSharperOptions x) => ProcessReSharperResultsAsync(x, container).GetAwaiter().GetResult(),
+                    (ClocOptions x) => ProcessClocResultsAsync(x, container).GetAwaiter().GetResult(),
                     _ => ProcessErrors(result));
 
             return exitCode;
+        }
+
+        private static Task<int> ProcessClocResultsAsync(ClocOptions options, IServiceProvider container)
+        {
+            return container.GetRequiredService<IConvertClocCommand>().ExecuteAsync(options);
         }
 
         private static Task<int> ProcessRoslynResultsAsync(RoslynOptions options, IServiceProvider container)
@@ -85,6 +91,7 @@ namespace GodelTech.CodeReview.FileConverter
             
             serviceProvider.AddTransient<IConvertReSharperCommand, ConvertReSharperCommand>();
             serviceProvider.AddTransient<IConvertRoslynCommand, ConvertRoslynCommand>();
+            serviceProvider.AddTransient<IConvertClocCommand, ConvertClocCommand>();
             
             return serviceProvider.BuildServiceProvider();
         }

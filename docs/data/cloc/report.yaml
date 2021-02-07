@@ -1,0 +1,841 @@
+---
+# github.com/AlDanial/cloc
+header : 
+  cloc_url           : github.com/AlDanial/cloc
+  cloc_version       : 1.88
+  elapsed_seconds    : 10.9346380233765
+  n_files            : 155
+  n_lines            : 80124
+  files_per_second   : 14.1751377291718
+  lines_per_second   : 7327.54022846554
+  report_file        : report.yaml
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.css' :
+  blank: 1199
+  comment: 7
+  code: 8832
+  language: CSS
+'./test/GodelTech.Microservices.Core.Tests/obj/project.assets.json' :
+  blank: 0
+  comment: 0
+  code: 7705
+  language: JSON
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery/dist/jquery.js' :
+  blank: 1950
+  comment: 1724
+  code: 6690
+  language: JavaScript
+'./test/GodelTech.Microservices.Core.Tests/bin/Debug/netcoreapp3.1/GodelTech.Microservices.Core.Tests.deps.json' :
+  blank: 0
+  comment: 0
+  code: 6003
+  language: JSON
+'./test/GodelTech.Microservices.IntegrationTests/obj/project.assets.json' :
+  blank: 0
+  comment: 0
+  code: 5596
+  language: JSON
+'./test/GodelTech.Microservices.IntegrationTests/bin/Debug/netcoreapp3.1/GodelTech.Microservices.IntegrationTests.deps.json' :
+  blank: 0
+  comment: 0
+  code: 5362
+  language: JSON
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js' :
+  blank: 1161
+  comment: 1359
+  code: 4493
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/bin/Debug/netcoreapp3.1/GodelTech.Microservices.Website.deps.json' :
+  blank: 0
+  comment: 0
+  code: 3858
+  language: JSON
+'./test/GodelTech.Microservices.IntegrationTests/bin/Debug/netcoreapp3.1/GodelTech.Microservices.Core.deps.json' :
+  blank: 0
+  comment: 0
+  code: 3842
+  language: JSON
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css' :
+  blank: 201
+  comment: 7
+  code: 3511
+  language: CSS
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.js' :
+  blank: 841
+  comment: 332
+  code: 3262
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation/dist/jquery.validate.js' :
+  blank: 234
+  comment: 183
+  code: 1184
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/obj/project.assets.json' :
+  blank: 0
+  comment: 0
+  code: 1013
+  language: JSON
+'./src/GodelTech.Microservices.Core/obj/project.assets.json' :
+  blank: 0
+  comment: 0
+  code: 998
+  language: JSON
+'./.vs/GodelTech.Microservices.Core/config/applicationhost.config' :
+  blank: 16
+  comment: 45
+  code: 936
+  language: XML
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation/dist/additional-methods.js' :
+  blank: 136
+  comment: 393
+  code: 629
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js' :
+  blank: 53
+  comment: 73
+  code: 306
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs' :
+  blank: 5
+  comment: 1
+  code: 301
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_Layout.cshtml.g.cs' :
+  blank: 5
+  comment: 1
+  code: 292
+  language: C#
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css' :
+  blank: 56
+  comment: 8
+  code: 267
+  language: CSS
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/contentModel.xml' :
+  blank: 0
+  comment: 0
+  code: 236
+  language: XML
+'./test/GodelTech.Microservices.IntegrationTests/obj/GodelTech.Microservices.IntegrationTests.csproj.nuget.dgspec.json' :
+  blank: 0
+  comment: 0
+  code: 217
+  language: JSON
+'./README.md' :
+  blank: 53
+  comment: 0
+  code: 186
+  language: Markdown
+'./report.yaml' :
+  blank: 1
+  comment: 0
+  code: 176
+  language: YAML
+'./src/GodelTech.Microservices.Core/Mvc/Middlewares/RequestResponseLoggingMiddleware.cs' :
+  blank: 31
+  comment: 6
+  code: 169
+  language: C#
+'./test/GodelTech.Microservices.Core.Tests/obj/GodelTech.Microservices.Core.Tests.csproj.nuget.dgspec.json' :
+  blank: 0
+  comment: 0
+  code: 164
+  language: JSON
+'./test/GodelTech.Microservices.Website/obj/GodelTech.Microservices.Website.csproj.nuget.dgspec.json' :
+  blank: 0
+  comment: 0
+  code: 132
+  language: JSON
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/workspace.xml' :
+  blank: 0
+  comment: 0
+  code: 121
+  language: XML
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs' :
+  blank: 1
+  comment: 1
+  code: 92
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs' :
+  blank: 1
+  comment: 1
+  code: 92
+  language: C#
+'./test/GodelTech.Microservices.Core.Tests/obj/project.packagespec.json' :
+  blank: 0
+  comment: 0
+  code: 86
+  language: JSON
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/Error.cshtml.g.cs' :
+  blank: 6
+  comment: 1
+  code: 83
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs' :
+  blank: 6
+  comment: 1
+  code: 81
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/obj/project.packagespec.json' :
+  blank: 0
+  comment: 0
+  code: 80
+  language: JSON
+'./src/GodelTech.Microservices.Core/obj/GodelTech.Microservices.Core.csproj.nuget.dgspec.json' :
+  blank: 0
+  comment: 0
+  code: 73
+  language: JSON
+'./src/GodelTech.Microservices.Core/HealthChecks/HealthCheckInitializer.cs' :
+  blank: 11
+  comment: 0
+  code: 69
+  language: C#
+'./test/GodelTech.Microservices.Core.Tests/Services/CorrelationIdAccessorTests.cs' :
+  blank: 19
+  comment: 0
+  code: 67
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/Middlewares/LogUncaughtErrorsMiddleware.cs' :
+  blank: 5
+  comment: 2
+  code: 60
+  language: C#
+'./src/GodelTech.Microservices.Core/obj/project.packagespec.json' :
+  blank: 0
+  comment: 0
+  code: 60
+  language: JSON
+'./src/GodelTech.Microservices.Core/Mvc/ApiInitializer.cs' :
+  blank: 10
+  comment: 0
+  code: 57
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/Privacy.cshtml.g.cs' :
+  blank: 4
+  comment: 1
+  code: 57
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs' :
+  blank: 4
+  comment: 1
+  code: 55
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/project.packagespec.json' :
+  blank: 0
+  comment: 0
+  code: 54
+  language: JSON
+'./test/GodelTech.Microservices.IntegrationTests/Mvc/MvcInitializerTests.cs' :
+  blank: 14
+  comment: 0
+  code: 53
+  language: C#
+'./test/GodelTech.Microservices.Website/wwwroot/css/site.css' :
+  blank: 10
+  comment: 8
+  code: 53
+  language: CSS
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/Index.cshtml.g.cs' :
+  blank: 3
+  comment: 1
+  code: 50
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs' :
+  blank: 3
+  comment: 1
+  code: 48
+  language: C#
+'./test/GodelTech.Microservices.Website/Pages/Shared/_Layout.cshtml' :
+  blank: 3
+  comment: 0
+  code: 47
+  language: Razor
+'./test/GodelTech.Microservices.Website/Views/Shared/_Layout.cshtml' :
+  blank: 1
+  comment: 0
+  code: 47
+  language: Razor
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewStart.cshtml.g.cs' :
+  blank: 3
+  comment: 1
+  code: 47
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs' :
+  blank: 3
+  comment: 1
+  code: 47
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/MvcInitializer.cs' :
+  blank: 9
+  comment: 0
+  code: 43
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/Mvc/ApiInitializerTests.cs' :
+  blank: 9
+  comment: 0
+  code: 40
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/Mvc/RazorPagesInitializerTests.cs' :
+  blank: 9
+  comment: 0
+  code: 40
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Pages/_ViewImports.cshtml.g.cs' :
+  blank: 1
+  comment: 1
+  code: 40
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs' :
+  blank: 1
+  comment: 1
+  code: 40
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/Filters/HttpStatusCodeOnExceptionAttribute.cs' :
+  blank: 8
+  comment: 0
+  code: 39
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/RazorPagesInitializer.cs' :
+  blank: 8
+  comment: 3
+  code: 39
+  language: C#
+'./src/GodelTech.Microservices.Core/MicroserviceStartup.cs' :
+  blank: 8
+  comment: 2
+  code: 37
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/Middlewares/CorrelationIdMiddleware.cs' :
+  blank: 7
+  comment: 0
+  code: 36
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/DeveloperExceptionPageInitializer.cs' :
+  blank: 4
+  comment: 4
+  code: 32
+  language: C#
+'./.github/ISSUE_TEMPLATE/BUG_REPORT.md' :
+  blank: 11
+  comment: 0
+  code: 30
+  language: Markdown
+'./.github/ISSUE_TEMPLATE/FEATURE_REQUEST.md' :
+  blank: 9
+  comment: 0
+  code: 30
+  language: Markdown
+'./test/GodelTech.Microservices.Website/Controllers/HomeController.cs' :
+  blank: 5
+  comment: 0
+  code: 28
+  language: C#
+'./src/GodelTech.Microservices.Core/GenericInitializer.cs' :
+  blank: 6
+  comment: 0
+  code: 27
+  language: C#
+'./test/GodelTech.Microservices.Core.Tests/obj/GodelTech.Microservices.Core.Tests.csproj.nuget.g.props' :
+  blank: 0
+  comment: 0
+  code: 27
+  language: XML
+'./test/GodelTech.Microservices.IntegrationTests/bin/Debug/netcoreapp3.1/Properties/launchSettings.json' :
+  blank: 0
+  comment: 0
+  code: 27
+  language: JSON
+'./test/GodelTech.Microservices.IntegrationTests/obj/GodelTech.Microservices.IntegrationTests.csproj.nuget.g.props' :
+  blank: 0
+  comment: 0
+  code: 27
+  language: XML
+'./test/GodelTech.Microservices.Website/bin/Debug/netcoreapp3.1/Properties/launchSettings.json' :
+  blank: 0
+  comment: 0
+  code: 27
+  language: JSON
+'./src/GodelTech.Microservices.Core/GodelTech.Microservices.Core.csproj' :
+  blank: 7
+  comment: 4
+  code: 26
+  language: MSBuild script
+'./src/GodelTech.Microservices.Core/Utils/InMemoryDictionaryExtensions.cs' :
+  blank: 6
+  comment: 0
+  code: 26
+  language: C#
+'./test/GodelTech.Microservices.Website/Pages/Error.cshtml.cs' :
+  blank: 5
+  comment: 0
+  code: 26
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/CommonMiddlewareInitializer.cs' :
+  blank: 3
+  comment: 0
+  code: 25
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/HttpsInitializer.cs' :
+  blank: 4
+  comment: 1
+  code: 25
+  language: C#
+'./src/GodelTech.Microservices.Core/Services/CorrelationIdAccessor.cs' :
+  blank: 8
+  comment: 3
+  code: 25
+  language: C#
+'./test/GodelTech.Microservices.Website/Startup.cs' :
+  blank: 6
+  comment: 5
+  code: 25
+  language: C#
+'./azure-pipelines.yml' :
+  blank: 3
+  comment: 0
+  code: 23
+  language: YAML
+'./src/GodelTech.Microservices.Core/Exceptions/FileTooLargeExceptionException.cs' :
+  blank: 4
+  comment: 0
+  code: 23
+  language: C#
+'./test/GodelTech.Microservices.Core.Tests/GodelTech.Microservices.Core.Tests.csproj' :
+  blank: 6
+  comment: 1
+  code: 23
+  language: MSBuild script
+'./test/GodelTech.Microservices.Website/Pages/Error.cshtml' :
+  blank: 3
+  comment: 0
+  code: 23
+  language: Razor
+'./src/GodelTech.Microservices.Core/MicroserviceInitializerBase.cs' :
+  blank: 4
+  comment: 0
+  code: 22
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/GodelTech.Microservices.IntegrationTests.csproj' :
+  blank: 7
+  comment: 0
+  code: 22
+  language: MSBuild script
+'./test/GodelTech.Microservices.Website/Views/Shared/Error.cshtml' :
+  blank: 3
+  comment: 0
+  code: 22
+  language: Razor
+'./test/GodelTech.Microservices.Website/Pages/Index.cshtml.cs' :
+  blank: 4
+  comment: 0
+  code: 21
+  language: C#
+'./test/GodelTech.Microservices.Website/Pages/Privacy.cshtml.cs' :
+  blank: 3
+  comment: 0
+  code: 21
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/Utils/IntegrationTestWebApplicationFactory.cs' :
+  blank: 1
+  comment: 0
+  code: 20
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/IntegrationTestBase.cs' :
+  blank: 3
+  comment: 0
+  code: 19
+  language: C#
+'./test/GodelTech.Microservices.Website/IntegrationTestsStartup.cs' :
+  blank: 3
+  comment: 6
+  code: 19
+  language: C#
+'./src/GodelTech.Microservices.Core/Services/CommonServicesInitializer.cs' :
+  blank: 4
+  comment: 0
+  code: 18
+  language: C#
+'./test/GodelTech.Microservices.Website/Program.cs' :
+  blank: 2
+  comment: 0
+  code: 18
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/GodelTech.Microservices.Website.csproj.nuget.g.props' :
+  blank: 0
+  comment: 0
+  code: 18
+  language: XML
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation/LICENSE.md' :
+  blank: 4
+  comment: 0
+  code: 18
+  language: Markdown
+'./.idea/.idea.GodelTech.Microservices.Core/riderModule.iml' :
+  blank: 0
+  comment: 0
+  code: 16
+  language: XML
+'./src/GodelTech.Microservices.Core/Services/DisposableAction.cs' :
+  blank: 3
+  comment: 8
+  code: 16
+  language: C#
+'./src/GodelTech.Microservices.Core/Exceptions/RequestValidationException.cs' :
+  blank: 3
+  comment: 0
+  code: 15
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/Utils/HttpResponseMessageExtensions.cs' :
+  blank: 2
+  comment: 0
+  code: 14
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/obj/GodelTech.Microservices.IntegrationTests.csproj.nuget.g.targets' :
+  blank: 0
+  comment: 0
+  code: 14
+  language: XML
+'./test/GodelTech.Microservices.Website/v1/Controllers/UserController.cs' :
+  blank: 1
+  comment: 0
+  code: 14
+  language: C#
+'./test/GodelTech.Microservices.Core.Tests/obj/GodelTech.Microservices.Core.Tests.csproj.nuget.g.targets' :
+  blank: 0
+  comment: 0
+  code: 13
+  language: XML
+'./test/GodelTech.Microservices.IntegrationTests/obj/Debug/netcoreapp3.1/GodelTech.Microservices.IntegrationTests.AssemblyInfo.cs' :
+  blank: 4
+  comment: 9
+  code: 13
+  language: C#
+'./.github/PULL_REQUEST_TEMPLATE.md' :
+  blank: 2
+  comment: 0
+  code: 12
+  language: Markdown
+'./CodeCoverage.runsettings' :
+  blank: 0
+  comment: 1
+  code: 12
+  language: XML
+'./src/GodelTech.Microservices.Core/Mvc/Filters/BadRequestOnExceptionAttribute.cs' :
+  blank: 1
+  comment: 0
+  code: 12
+  language: C#
+'./src/GodelTech.Microservices.Core/Mvc/Filters/NotFoundOnExceptionAttribute.cs' :
+  blank: 1
+  comment: 0
+  code: 12
+  language: C#
+'./test/GodelTech.Microservices.Website/GodelTech.Microservices.Website.csproj' :
+  blank: 4
+  comment: 0
+  code: 12
+  language: MSBuild script
+'./test/GodelTech.Microservices.Website/bin/Debug/netcoreapp3.1/GodelTech.Microservices.Website.runtimeconfig.json' :
+  blank: 0
+  comment: 0
+  code: 12
+  language: JSON
+'./src/GodelTech.Microservices.Core/Exceptions/ResourceNotFoundException.cs' :
+  blank: 1
+  comment: 0
+  code: 11
+  language: C#
+'./src/GodelTech.Microservices.Core/IMicroserviceInitializer.cs' :
+  blank: 1
+  comment: 0
+  code: 11
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/GodelTech.Microservices.Website.RazorTargetAssemblyInfo.cs' :
+  blank: 4
+  comment: 10
+  code: 11
+  language: C#
+'./src/GodelTech.Microservices.Core/obj/Debug/netcoreapp3.1/GodelTech.Microservices.Core.AssemblyInfo.cs' :
+  blank: 4
+  comment: 10
+  code: 10
+  language: C#
+'./test/GodelTech.Microservices.Website/bin/Debug/netcoreapp3.1/appsettings.json' :
+  blank: 0
+  comment: 0
+  code: 10
+  language: JSON
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/modules.xml' :
+  blank: 0
+  comment: 0
+  code: 9
+  language: XML
+'./test/GodelTech.Microservices.Core.Tests/bin/Debug/netcoreapp3.1/GodelTech.Microservices.Core.Tests.runtimeconfig.json' :
+  blank: 0
+  comment: 0
+  code: 9
+  language: JSON
+'./test/GodelTech.Microservices.Core.Tests/obj/Debug/netcoreapp3.1/GodelTech.Microservices.Core.Tests.AssemblyInfo.cs' :
+  blank: 4
+  comment: 10
+  code: 9
+  language: C#
+'./test/GodelTech.Microservices.Website/GodelTech.Microservices.Website.csproj.user' :
+  blank: 0
+  comment: 0
+  code: 9
+  language: XML
+'./test/GodelTech.Microservices.Website/Pages/Index.cshtml' :
+  blank: 1
+  comment: 0
+  code: 9
+  language: Razor
+'./test/GodelTech.Microservices.Website/bin/Debug/netcoreapp3.1/appsettings.Development.json' :
+  blank: 0
+  comment: 0
+  code: 9
+  language: JSON
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/GodelTech.Microservices.Website.AssemblyInfo.cs' :
+  blank: 4
+  comment: 10
+  code: 9
+  language: C#
+'./test/GodelTech.Microservices.Website/obj/GodelTech.Microservices.Website.csproj.nuget.g.targets' :
+  blank: 0
+  comment: 0
+  code: 9
+  language: XML
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/.idea.GodelTech.Microservices.Core.iml' :
+  blank: 0
+  comment: 0
+  code: 8
+  language: XML
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/indexLayout.xml' :
+  blank: 0
+  comment: 0
+  code: 8
+  language: XML
+'./src/GodelTech.Microservices.Core/Services/ICorrelationIdSetter.cs' :
+  blank: 1
+  comment: 0
+  code: 8
+  language: C#
+'./test/GodelTech.Microservices.Website/Models/ErrorViewModel.cs' :
+  blank: 1
+  comment: 0
+  code: 8
+  language: C#
+'./test/GodelTech.Microservices.Website/bin/Debug/netcoreapp3.1/GodelTech.Microservices.Website.runtimeconfig.dev.json' :
+  blank: 0
+  comment: 0
+  code: 8
+  language: JSON
+'./test/GodelTech.Microservices.Website/Pages/Privacy.cshtml' :
+  blank: 1
+  comment: 0
+  code: 7
+  language: Razor
+'./test/GodelTech.Microservices.Website/Views/Home/Index.cshtml' :
+  blank: 1
+  comment: 0
+  code: 7
+  language: Razor
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/misc.xml' :
+  blank: 0
+  comment: 0
+  code: 6
+  language: XML
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/projectSettingsUpdater.xml' :
+  blank: 0
+  comment: 0
+  code: 6
+  language: XML
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/vcs.xml' :
+  blank: 0
+  comment: 0
+  code: 6
+  language: XML
+'./test/GodelTech.Microservices.IntegrationTests/GodelTech.Microservices.IntegrationTests.csproj.user' :
+  blank: 0
+  comment: 0
+  code: 6
+  language: XML
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/GodelTech.Microservices.Website.RazorAssemblyInfo.cs' :
+  blank: 4
+  comment: 10
+  code: 6
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/obj/Debug/netcoreapp3.1/GodelTech.Microservices.IntegrationTests.MvcApplicationPartsAssemblyInfo.cs' :
+  blank: 4
+  comment: 9
+  code: 5
+  language: C#
+'./test/GodelTech.Microservices.Website/Views/Home/Privacy.cshtml' :
+  blank: 1
+  comment: 0
+  code: 5
+  language: Razor
+'./.idea/.idea.GodelTech.Microservices.Core/.idea/encodings.xml' :
+  blank: 0
+  comment: 0
+  code: 4
+  language: XML
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/GodelTech.Microservices.Website.MvcApplicationPartsAssemblyInfo.cs' :
+  blank: 4
+  comment: 9
+  code: 4
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/obj/Debug/netcoreapp3.1/staticwebassets/GodelTech.Microservices.IntegrationTests.StaticWebAssets.xml' :
+  blank: 0
+  comment: 0
+  code: 3
+  language: XML
+'./test/GodelTech.Microservices.IntegrationTests/xunit.runner.json' :
+  blank: 0
+  comment: 0
+  code: 3
+  language: JSON
+'./test/GodelTech.Microservices.Website/Pages/_ViewImports.cshtml' :
+  blank: 0
+  comment: 0
+  code: 3
+  language: Razor
+'./test/GodelTech.Microservices.Website/Views/_ViewStart.cshtml' :
+  blank: 0
+  comment: 0
+  code: 3
+  language: Razor
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs' :
+  blank: 0
+  comment: 1
+  code: 3
+  language: C#
+'./test/GodelTech.Microservices.IntegrationTests/Config.cs' :
+  blank: 2
+  comment: 3
+  code: 2
+  language: C#
+'./test/GodelTech.Microservices.Website/Views/Shared/_ValidationScriptsPartial.cshtml' :
+  blank: 0
+  comment: 0
+  code: 2
+  language: Razor
+'./test/GodelTech.Microservices.Website/Views/_ViewImports.cshtml' :
+  blank: 0
+  comment: 0
+  code: 2
+  language: Razor
+'./.github/ISSUE_TEMPLATE/config.yaml' :
+  blank: 0
+  comment: 0
+  code: 1
+  language: YAML
+'./test/GodelTech.Microservices.Website/obj/Debug/netcoreapp3.1/staticwebassets/GodelTech.Microservices.Website.StaticWebAssets.xml' :
+  blank: 0
+  comment: 0
+  code: 1
+  language: XML
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css' :
+  blank: 0
+  comment: 6
+  code: 1
+  language: CSS
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css' :
+  blank: 0
+  comment: 7
+  code: 1
+  language: CSS
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css' :
+  blank: 0
+  comment: 6
+  code: 1
+  language: CSS
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js' :
+  blank: 0
+  comment: 6
+  code: 1
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js' :
+  blank: 0
+  comment: 6
+  code: 1
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js' :
+  blank: 0
+  comment: 4
+  code: 1
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation/dist/additional-methods.min.js' :
+  blank: 0
+  comment: 3
+  code: 1
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js' :
+  blank: 0
+  comment: 3
+  code: 1
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/lib/jquery/dist/jquery.min.js' :
+  blank: 0
+  comment: 1
+  code: 1
+  language: JavaScript
+'./test/GodelTech.Microservices.Website/wwwroot/js/site.js' :
+  blank: 1
+  comment: 3
+  code: 0
+  language: JavaScript
+SUM: 
+  blank: 6297
+  comment: 4325
+  code: 69502
+  nFiles: 155
+'JSON' :
+  nFiles: 24
+  blank: 0
+  comment: 0
+  code: 35348
+'JavaScript' :
+  nFiles: 13
+  blank: 4376
+  comment: 4090
+  code: 16570
+'CSS' :
+  nFiles: 7
+  blank: 1466
+  comment: 49
+  code: 12666
+'C#' :
+  nFiles: 65
+  blank: 318
+  comment: 135
+  code: 2687
+'XML' :
+  nFiles: 22
+  blank: 16
+  comment: 46
+  code: 1495
+'Markdown' :
+  nFiles: 5
+  blank: 79
+  comment: 0
+  code: 276
+'YAML' :
+  nFiles: 3
+  blank: 4
+  comment: 0
+  code: 200
+'Razor' :
+  nFiles: 12
+  blank: 14
+  comment: 0
+  code: 177
+'MSBuild script' :
+  nFiles: 4
+  blank: 24
+  comment: 5
+  code: 83
+SUM: 
+  blank: 6297
+  comment: 4325
+  code: 69502
+  nFiles: 155
