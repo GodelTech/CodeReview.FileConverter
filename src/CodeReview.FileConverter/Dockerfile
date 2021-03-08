@@ -9,9 +9,6 @@ RUN dotnet publish ./CodeReview.FileConverter/CodeReview.FileConverter.csproj -c
 
 FROM mcr.microsoft.com/dotnet/runtime:5.0 AS runtime
 
-RUN apt-get update
-RUN apt-get --yes install nuget
-
 WORKDIR /app
 COPY --from=build /app/CodeReview.FileConverter/out .
 ENTRYPOINT ["dotnet", "CodeReview.FileConverter.dll"]
