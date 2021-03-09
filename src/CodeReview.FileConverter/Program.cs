@@ -27,16 +27,22 @@ namespace GodelTech.CodeReview.FileConverter
                 x.HelpWriter = TextWriter.Null;
             });
 
-            var result = parser.ParseArguments<RoslynOptions, ReSharperOptions, ClocOptions>(args);
+            var result = parser.ParseArguments<RoslynOptions, ReSharperOptions, ClocOptions, DependencyCheckOptions>(args);
 
             var exitCode = result
                 .MapResult(
                     (RoslynOptions x) => ProcessRoslynResultsAsync(x, container).GetAwaiter().GetResult(),
                     (ReSharperOptions x) => ProcessReSharperResultsAsync(x, container).GetAwaiter().GetResult(),
                     (ClocOptions x) => ProcessClocResultsAsync(x, container).GetAwaiter().GetResult(),
+                    (DependencyCheckOptions x) => ProcessDependencyCheckResultsAsync(x, container).GetAwaiter().GetResult(),
                     _ => ProcessErrors(result));
 
             return exitCode;
+        }
+
+        private static Task<int> ProcessDependencyCheckResultsAsync(DependencyCheckOptions options, ServiceProvider container)
+        {
+            return container.GetRequiredService<IConvertDependencyCheckCommand>().ExecuteAsync(options);
         }
 
         private static Task<int> ProcessClocResultsAsync(ClocOptions options, IServiceProvider container)
@@ -85,6 +91,7 @@ namespace GodelTech.CodeReview.FileConverter
 
             serviceProvider.AddTransient<IRoslynIssueConverter, RoslynIssueConverter>();
             serviceProvider.AddTransient<IReSharperFileConverter, ReSharperFileConverter>();
+            serviceProvider.AddTransient<IDependencyCheckFileConverter, DependencyCheckFileConverter>();
             serviceProvider.AddTransient<IFileListResolver, FileListResolver>();
             serviceProvider.AddTransient<IIssuePersister, IssuePersister>();
             serviceProvider.AddTransient<IDetailsDictionaryProvider, DetailsDictionaryProvider>();
@@ -92,7 +99,8 @@ namespace GodelTech.CodeReview.FileConverter
             serviceProvider.AddTransient<IConvertReSharperCommand, ConvertReSharperCommand>();
             serviceProvider.AddTransient<IConvertRoslynCommand, ConvertRoslynCommand>();
             serviceProvider.AddTransient<IConvertClocCommand, ConvertClocCommand>();
-            
+            serviceProvider.AddTransient<IConvertDependencyCheckCommand, ConvertDependencyCheckCommand>();
+
             return serviceProvider.BuildServiceProvider();
         }
     }

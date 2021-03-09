@@ -3,6 +3,10 @@
     "ReviewItEasy.FileConverter": {
       "commandName": "Project",
       "commandLineArgs": "cloc -o file-stat.json -f ../../../../../docs/data/cloc/report.json -p ./"
+    },
+    "DependencyCheck.FileConverter": {
+      "commandName": "Project",
+      "commandLineArgs": "dependencyCheck -o dependency-check-result -f ../../../../../docs/data/dependencyCheck/dependency-check-report.json"
     }
   }
 }
