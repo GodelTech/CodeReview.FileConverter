@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReview.FileConverter", "src\CodeReview.FileConverter\CodeReview.FileConverter.csproj", "{FA4F8E57-CA11-49BE-A1C4-31477FE14A88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodeReview.FileConverter", "src\CodeReview.FileConverter\CodeReview.FileConverter.csproj", "{FA4F8E57-CA11-49BE-A1C4-31477FE14A88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeReview.FileConverter.IntegrationTests", "tests\CodeReview.FileConverter.IntegrationTests\CodeReview.FileConverter.IntegrationTests.csproj", "{B886D92F-8E5E-46A5-A0BF-63172348A735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{FA4F8E57-CA11-49BE-A1C4-31477FE14A88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4F8E57-CA11-49BE-A1C4-31477FE14A88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4F8E57-CA11-49BE-A1C4-31477FE14A88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B886D92F-8E5E-46A5-A0BF-63172348A735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B886D92F-8E5E-46A5-A0BF-63172348A735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B886D92F-8E5E-46A5-A0BF-63172348A735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B886D92F-8E5E-46A5-A0BF-63172348A735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

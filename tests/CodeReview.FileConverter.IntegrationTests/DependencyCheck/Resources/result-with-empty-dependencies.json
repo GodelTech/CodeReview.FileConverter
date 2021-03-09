@@ -1,0 +1,32 @@
+{
+    "reportSchema": "1.1",
+    "scanInfo": {
+        "engineVersion": "6.1.1",
+        "dataSource": [
+            {
+                "name": "NVD CVE Checked",
+                "timestamp": "2021-02-23T09:03:32"
+            },
+            {
+                "name": "NVD CVE Modified",
+                "timestamp": "2021-02-23T06:01:00"
+            },
+            {
+                "name": "VersionCheckOn",
+                "timestamp": "2021-02-23T09:03:32"
+            }
+        ]
+    },
+    "projectInfo": {
+        "name": "",
+        "reportDate": "2021-02-23T09:25:03.771669Z",
+        "credits": {
+            "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+            "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+            "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+            "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+        }
+    },
+    "dependencies": [
+    ]
+}

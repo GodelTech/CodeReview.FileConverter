@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="DependencyCheck\Resources\empty-result.json" />
+    <None Remove="DependencyCheck\Resources\result-with-empty-dependencies.json" />
+    <None Remove="DependencyCheck\Resources\result-with-float-value.json" />
+    <None Remove="DependencyCheck\Resources\result-with-vulnerabilities.json" />
+    <None Remove="DependencyCheck\Resources\result-without-vulnerabilities.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="DependencyCheck\Resources\empty-result.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DependencyCheck\Resources\result-with-float-value.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DependencyCheck\Resources\result-with-empty-dependencies.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DependencyCheck\Resources\result-with-vulnerabilities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="DependencyCheck\Resources\result-without-vulnerabilities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\CodeReview.FileConverter\CodeReview.FileConverter.csproj" />
+  </ItemGroup>
+
+</Project>
