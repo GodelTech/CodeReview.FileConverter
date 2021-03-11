@@ -57,11 +57,12 @@ namespace CodeReview.FileConverter.IntegrationTests.DependencyCheck
             var issue = issues.First();
             Assert.Multiple(() =>
             {
-                Assert.That(issue.Title, Is.EqualTo("Solution contains vulnerable library Nancy:1.4.0"));
-                Assert.That(issue.Description, Is.EqualTo("Csrf.cs in NancyFX Nancy before 1.4.4" +
+                Assert.That(issue.Title, Is.EqualTo("Component with known vulnerabilities discovered"));
+                Assert.That(issue.Description, Is.EqualTo("Project uses vulnerable dependency Nancy:1.4.0. " +
+                                                          "Csrf.cs in NancyFX Nancy before 1.4.4" +
                                                           " and 2.x before 2.0-dangermouse has Remote Code Execution via" +
                                                           " Deserialization of JSON data in a CSRF Cookie."));
-                Assert.That(issue.Category, Is.EqualTo("Using Components with Known Vulnerabilities"));
+                Assert.That(issue.Category, Is.EqualTo("Vulnerable Dependency"));
                 Assert.That(issue.DetailsUrl, Is.EqualTo("https://ossindex.sonatype.org/vuln/" +
                                                          "0a5d262f-b9cb-46fe-924e-98d33711ae04?component-type=nuget&component-name=Nancy&" +
                                                          "utm_source=dependency-check&utm_medium=integration&utm_content=6.1.1"));
