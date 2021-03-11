@@ -43,7 +43,6 @@ namespace GodelTech.CodeReview.FileConverter.Services
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
-
             };
 
             var dependencyCheckResult = await JsonSerializer.DeserializeAsync<DependencyCheckResult>(fileStream, options);
@@ -61,9 +60,9 @@ namespace GodelTech.CodeReview.FileConverter.Services
                 yield return new Issue
                 {
                     Id = _idGenerator.GetNext(),
-                    Title = $"Solution contains vulnerable library {vulnerableDependency.FileName}",
-                    Description = vulnerability.Description,
-                    Category = "Using Components with Known Vulnerabilities",
+                    Title = "Component with known vulnerabilities discovered",
+                    Description = GetDescription(vulnerableDependency.FileName, vulnerability.Description),
+                    Category = "Vulnerable Dependency",
                     Tags = GetTags(),
                     DetailsUrl = vulnerability.DetailsUrl,
                     Level = ConvertLevel(vulnerability.Severity),
@@ -77,6 +76,11 @@ namespace GodelTech.CodeReview.FileConverter.Services
             }
         }
 
+        private string GetDescription(string fileName, string description)
+        {
+            return $"Project uses vulnerable dependency {fileName}. {description}";
+        }
+
         private string[] GetTags()
         {
             return new[]
@@ -88,6 +92,11 @@ namespace GodelTech.CodeReview.FileConverter.Services
 
         private string GetMessage(Cvssv3 cvssv3)
         {
+            if (cvssv3 == null)
+            {
+                return string.Empty;
+            }
+
             return $"Common Vulnerability Scoring System rates: BaseScore {cvssv3.BaseScore}," +
                    $" AttackVector {cvssv3.AttackVector}, AttackComplexity {cvssv3.AttackComplexity}," +
                    $" PrivilegesRequired {cvssv3.PrivilegesRequired}, UseInteraction {cvssv3.UserInteraction}," +
