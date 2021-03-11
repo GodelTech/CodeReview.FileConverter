@@ -1,0 +1,157 @@
+{
+    "reportSchema": "1.1",
+    "scanInfo": {
+        "engineVersion": "6.1.1",
+        "dataSource": [
+            {
+                "name": "NVD CVE Checked",
+                "timestamp": "2021-02-23T09:03:32"
+            },
+            {
+                "name": "NVD CVE Modified",
+                "timestamp": "2021-02-23T06:01:00"
+            },
+            {
+                "name": "VersionCheckOn",
+                "timestamp": "2021-02-23T09:03:32"
+            }
+        ]
+    },
+    "projectInfo": {
+        "name": "",
+        "reportDate": "2021-02-23T09:25:03.771669Z",
+        "credits": {
+            "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+            "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+            "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+            "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+        }
+    },
+    "dependencies": [
+        {
+            "isVirtual": true,
+            "fileName": "Nancy.Hosting.Self:2.0.0",
+            "filePath": "\/src\/VulnerableLibraries.csproj",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "MEDIUM",
+                        "source": "msbuild",
+                        "name": "id",
+                        "value": "Nancy"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "msbuild",
+                        "name": "id",
+                        "value": "Nancy.Hosting.Self"
+                    },
+                    {
+                        "type": "product",
+                        "confidence": "MEDIUM",
+                        "source": "msbuild",
+                        "name": "id",
+                        "value": "Hosting.Self"
+                    },
+                    {
+                        "type": "product",
+                        "confidence": "MEDIUM",
+                        "source": "msbuild",
+                        "name": "id",
+                        "value": "Hosting"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "msbuild",
+                        "name": "version",
+                        "value": "2.0.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:nuget\/Nancy.Hosting.Self@2.0.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:nuget\/Nancy.Hosting.Self@2.0.0?utm_source=dependency-check&utm_medium=integration&utm_content=6.1.1"
+                }
+            ]
+        },
+        {
+            "isVirtual": true,
+            "fileName": "Nancy:1.4.0",
+            "filePath": "\/src\/VulnerableLibraries.csproj",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "LOW",
+                        "source": "msbuild",
+                        "name": "id",
+                        "value": "Nancy"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGHEST",
+                        "source": "msbuild",
+                        "name": "id",
+                        "value": "Nancy"
+                    }
+                ],
+                "versionEvidence": [
+                    {
+                        "type": "version",
+                        "confidence": "HIGHEST",
+                        "source": "msbuild",
+                        "name": "version",
+                        "value": "1.4.0"
+                    }
+                ]
+            },
+            "packages": [
+                {
+                    "id": "pkg:nuget\/Nancy@1.4.0",
+                    "confidence": "HIGHEST",
+                    "url": "https:\/\/ossindex.sonatype.org\/component\/pkg:nuget\/Nancy@1.4.0?utm_source=dependency-check&utm_medium=integration&utm_content=6.1.1"
+                }
+            ]
+        },
+        {
+            "isVirtual": false,
+            "fileName": "VulnerableLibraries.csproj",
+            "filePath": "\/src\/VulnerableLibraries.csproj",
+            "md5": "9c0862dd55b79fe48607820977f7a6a8",
+            "sha1": "ec710773fceb5807c274b778744f134399cecf95",
+            "sha256": "7ef8d3242655dc66be78288ae9dc1163537a89e2fadaddccd083869adf7e2148",
+            "evidenceCollected": {
+                "vendorEvidence": [
+                    {
+                        "type": "vendor",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "VulnerableLibraries"
+                    }
+                ],
+                "productEvidence": [
+                    {
+                        "type": "product",
+                        "confidence": "HIGH",
+                        "source": "file",
+                        "name": "name",
+                        "value": "VulnerableLibraries"
+                    }
+                ],
+                "versionEvidence": []
+            }
+        }
+    ]
+}
