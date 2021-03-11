@@ -63,7 +63,6 @@ namespace GodelTech.CodeReview.FileConverter.Services
                     Title = "Component with known vulnerabilities discovered",
                     Description = GetDescription(vulnerableDependency.FileName, vulnerability.Description),
                     Category = "Vulnerable Dependency",
-                    Tags = GetTags(),
                     DetailsUrl = vulnerability.DetailsUrl,
                     Level = ConvertLevel(vulnerability.Severity),
                     Message = GetMessage(vulnerability.Cvssv3),
@@ -79,15 +78,6 @@ namespace GodelTech.CodeReview.FileConverter.Services
         private string GetDescription(string fileName, string description)
         {
             return $"Project uses vulnerable dependency {fileName}. {description}";
-        }
-
-        private string[] GetTags()
-        {
-            return new[]
-            {
-                "Security",
-                "OWASP A9:2017",
-            };
         }
 
         private string GetMessage(Cvssv3 cvssv3)
