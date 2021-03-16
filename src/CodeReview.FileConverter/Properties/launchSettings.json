@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "ReviewItEasy.FileConverter": {
+    "CodeReview.FileConverter": {
       "commandName": "Project",
       "commandLineArgs": "cloc -o file-stat.json -f ../../../../../docs/data/cloc/report.json -p ./"
     },
