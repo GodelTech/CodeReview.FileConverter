@@ -55,7 +55,7 @@ namespace GodelTech.CodeReview.FileConverter.Services
                 Description = diagnosticDetails?.Description,
                 DetailsUrl = diagnosticDetails?.HelpLinkUri,
                 Id = _idGenerator.GetNext(),
-                Title = diagnosticDetails?.Title,
+                Title = diagnosticDetails?.Title ?? issue.RuleId,
                 Tags = diagnosticDetails?.CustomTags,
                 Level = ConvertLevel(issue.Level),
                 Message = issue.Message,
