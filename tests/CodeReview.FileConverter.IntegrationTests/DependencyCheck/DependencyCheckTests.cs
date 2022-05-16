@@ -77,6 +77,8 @@ namespace CodeReview.FileConverter.IntegrationTests.DependencyCheck
                 Assert.That(issue.Locations, Has.Length.EqualTo(1));
                 var location = issue.Locations.First();
                 Assert.That(location.FilePath, Is.EqualTo("/src/VulnerableLibraries.csproj"));
+                var property = issue.Properties.First(x => x.Key.Equals("baseScore"));
+                Assert.That(property.Value, Is.EqualTo("9.8"));
             });
         }
 

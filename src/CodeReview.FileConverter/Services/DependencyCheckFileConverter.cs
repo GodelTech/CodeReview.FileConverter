@@ -70,6 +70,13 @@ namespace GodelTech.CodeReview.FileConverter.Services
                     Locations = new[]
                     {
                         GetIssueLocations(vulnerableDependency)
+                    },
+                    Properties = new Dictionary<string, string>
+                    {
+                        {
+                            "BaseScore",
+                            vulnerability.Cvssv3.BaseScore.ToString()
+                        }
                     }
                 };
             }

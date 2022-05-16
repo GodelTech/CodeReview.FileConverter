@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Collections.Generic;
 
 namespace GodelTech.CodeReview.FileConverter.Models
 {
@@ -17,5 +18,6 @@ namespace GodelTech.CodeReview.FileConverter.Models
         public string Category { get; set; } // Minor Code Smell 
         public string[] Tags { get; set; } // C#, MainSourceScope, TestSourceScope 
         public IssueLocation[] Locations { get; set; }
+        public Dictionary<string, string> Properties { get; set; }
     }
 }
