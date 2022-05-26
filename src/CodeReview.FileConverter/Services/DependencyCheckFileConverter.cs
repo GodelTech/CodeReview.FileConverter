@@ -71,7 +71,7 @@ namespace GodelTech.CodeReview.FileConverter.Services
                         {
                             GetIssueLocations(dependency)
                         },
-                        Properties = AddProperties(vulnerability.Cvssv2, vulnerability.Cvssv3)
+                        Properties = AddProperties(vulnerability.Severity, vulnerability.Cvssv2, vulnerability.Cvssv3)
                     };
                 }
             }
@@ -94,7 +94,7 @@ namespace GodelTech.CodeReview.FileConverter.Services
             }
         }
 
-        private Dictionary<string, string> AddProperties(Cvssv2 cvssv2, Cvssv3 cvssv3)
+        private Dictionary<string, string> AddProperties(string severity, Cvssv2 cvssv2, Cvssv3 cvssv3)
         {
             var properties = new Dictionary<string, string>();
 
@@ -103,6 +103,11 @@ namespace GodelTech.CodeReview.FileConverter.Services
             if(score != null)
             {
                 properties.Add("score", score.ToString());
+            }
+
+            if (!string.IsNullOrWhiteSpace(severity))
+            {
+                properties.Add("severity", severity);
             }
 
             return properties;
