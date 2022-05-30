@@ -53,30 +53,34 @@ namespace CodeReview.FileConverter.IntegrationTests.DependencyCheck
             // Assert
             Assert.True(File.Exists(outputFilePath));
             var issues = await GetIssuesFromFile(outputFilePath);
-            Assert.That(issues, Has.Count.EqualTo(1));
-            var issue = issues.First();
+            Assert.That(issues, Has.Count.EqualTo(3));
+            var errrors = issues.Where(x => x.Level == IssueLevel.Error).ToList();
+            Assert.That(errrors, Has.Count.EqualTo(1));
+            var error = errrors.First();
             Assert.Multiple(() =>
             {
-                Assert.That(issue.Title, Is.EqualTo("Component with known vulnerabilities discovered"));
-                Assert.That(issue.Description, Is.EqualTo("Project uses vulnerable dependency Nancy:1.4.0. " +
+                Assert.That(error.Title, Is.EqualTo("Component with known vulnerabilities discovered"));
+                Assert.That(error.Description, Is.EqualTo("Project uses vulnerable dependency Nancy:1.4.0. " +
                                                           "Csrf.cs in NancyFX Nancy before 1.4.4" +
                                                           " and 2.x before 2.0-dangermouse has Remote Code Execution via" +
                                                           " Deserialization of JSON data in a CSRF Cookie."));
-                Assert.That(issue.Category, Is.EqualTo("Vulnerable Dependency"));
-                Assert.That(issue.DetailsUrl, Is.EqualTo("https://ossindex.sonatype.org/vuln/" +
+                Assert.That(error.Category, Is.EqualTo("External valnurable dependency"));
+                Assert.That(error.DetailsUrl, Is.EqualTo("https://ossindex.sonatype.org/vuln/" +
                                                          "0a5d262f-b9cb-46fe-924e-98d33711ae04?component-type=nuget&component-name=Nancy&" +
                                                          "utm_source=dependency-check&utm_medium=integration&utm_content=6.1.1"));
-                Assert.That(issue.RuleId, Is.EqualTo("CVE-2017-9785"));
-                Assert.That(issue.Level, Is.EqualTo(IssueLevel.Error));
-                Assert.That(issue.Message, Is.EqualTo("Common Vulnerability Scoring System rates: BaseScore 9.8," +
+                Assert.That(error.RuleId, Is.EqualTo("CVE-2017-9785"));
+                Assert.That(error.Level, Is.EqualTo(IssueLevel.Error));
+                Assert.That(error.Message, Is.EqualTo("Common Vulnerability Scoring System of 3 version. Defenition: BaseScore 9.8," +
                                                       " AttackVector N, AttackComplexity L," +
                                                       " PrivilegesRequired N, UseInteraction N," +
                                                       " Scope U, ConfidentialityImpact H," +
                                                       " IntegrityImpact H, AvailabilityImpact H," +
                                                       " BaseSeverity CRITICAL"));
-                Assert.That(issue.Locations, Has.Length.EqualTo(1));
-                var location = issue.Locations.First();
-                Assert.That(location.FilePath, Is.EqualTo("/src/VulnerableLibraries.csproj"));
+                Assert.That(error.Locations, Has.Length.EqualTo(1));
+                var location = error.Locations.First();
+                Assert.That(location.FilePath, Is.EqualTo("/src/VulnerableLibraries.csproj/Nancy:1.4.0"));
+                var property = error.Properties.First(x => x.Key.Equals("score"));
+                Assert.That(property.Value, Is.EqualTo("9.8"));
             });
         }
 
@@ -99,9 +103,11 @@ namespace CodeReview.FileConverter.IntegrationTests.DependencyCheck
             // Assert
             Assert.True(File.Exists(outputFilePath));
             var issues = await GetIssuesFromFile(outputFilePath);
-            Assert.That(issues, Has.Count.EqualTo(1));
-            var issue = issues.First();
-            Assert.That(issue.Message, Is.EqualTo("Common Vulnerability Scoring System rates: BaseScore 9.8," +
+            Assert.That(issues, Has.Count.EqualTo(3));
+            var errrors = issues.Where(x => x.Level == IssueLevel.Error).ToList();
+            Assert.That(errrors, Has.Count.EqualTo(1));
+            var error = errrors.First();
+            Assert.That(error.Message, Is.EqualTo("Common Vulnerability Scoring System of 3 version. Defenition: BaseScore 9.8," +
                                                   " AttackVector N, AttackComplexity L," +
                                                   " PrivilegesRequired N, UseInteraction N," +
                                                   " Scope U, ConfidentialityImpact H," +
@@ -128,7 +134,9 @@ namespace CodeReview.FileConverter.IntegrationTests.DependencyCheck
             // Assert
             Assert.True(File.Exists(outputFilePath));
             var issues = await GetIssuesFromFile(outputFilePath);
-            Assert.That(issues, Is.Empty);
+            Assert.That(issues, Has.Count.EqualTo(3));
+            var errrors = issues.Where(x => x.Level == IssueLevel.Error).ToList();
+            Assert.That(errrors, Is.Empty);
         }
 
         [Test]
