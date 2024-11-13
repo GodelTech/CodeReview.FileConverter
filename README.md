@@ -1,6 +1,6 @@
 # CodeReview.FileConverter
 
-NuGet: https://hub.docker.com/r/godeltech/codereview.file-converter
+Docker image: https://hub.docker.com/r/godeltech/codereview.file-converter
 
 ## Description
 
