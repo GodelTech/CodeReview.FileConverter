@@ -7,9 +7,11 @@ NuGet: https://hub.docker.com/r/godeltech/codereview.file-converter
 CodeReview.FileConverter is a tool that converts output of various code analysis tools into unified format.
 The tool is designed to convert output of code analysis tools into unified format that can be used by CodeReview.Evaluator.
 
-## Commands And Parameters
+## Usage
 
-### roslyn
+### Commands And Parameters
+
+#### roslyn
 Convert .NET Compliper output into unified format
 <pre>
 > dotnet CodeReview.FileConverter.dll roslyn -s ./src -f ./files -o output.json
@@ -24,7 +26,7 @@ Convert .NET Compliper output into unified format
 | --recurse      | -r  | true     | bool   | Specifies if recurse search must be used for for files in folder. True by defalut                            |
 | --output       | -o  | true     | string | Output file path                                                                                             |
 
-### resharper
+#### resharper
 Convert JetBrains ReSharper output into unified format
 <pre>
 > dotnet CodeReview.FileConverter.dll resharper -f ./files -o output.json
@@ -37,7 +39,7 @@ Convert JetBrains ReSharper output into unified format
 | --recurse | -r  | true     | bool   | Specifies if recurse search must be used for for files in folder. True by defalut |
 | --output  | -o  | true     | string | Output file path                                                                  |
         
-### cloc
+#### cloc
 Convert cloc tool YAML output into format supported by Evaluator
 <pre>
 > dotnet CodeReview.FileConverter.dll cloc -f ./files -o output.json -p ./
@@ -49,7 +51,7 @@ Convert cloc tool YAML output into format supported by Evaluator
 | --output  | -o  | true     | string | Output file path                                 |
 | --prefix  | -p  | false    | string | File path prefix to remove. "./" by default      |
 
-### dependencyCheck
+#### dependencyCheck
 Convert OWASP Dependency check output into unified format
 <pre>
 > dotnet CodeReview.FileConverter.dll dependencyCheck -f ./files -o output.json
